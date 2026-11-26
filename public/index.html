@@ -343,17 +343,22 @@ function savePlaces() {
   renderPlaces();
 }
 // One-tap setup link: …#places=<code>. Read once, saved on this device, then removed from the address bar.
+// The same link (or just its code) can also be pasted into "+ Save a place".
+function importPlacesCode(code) {
+  try {
+    const list = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(code)))));
+    if (!Array.isArray(list)) return false;
+    const added = list.filter(p => p && p.label && p.address && Array.isArray(p.latlng));
+    PLACES = PLACES.filter(p => !added.some(a => a.label === p.label)).concat(added);
+    savePlaces();
+    setTimeout(() => setStatus(`🏠 ${added.length} saved places added to this device.`), 0);
+    return true;
+  } catch { return false; }
+}
 (function importPlacesFromLink() {
   const m = location.hash.match(/places=([^&]+)/);
   if (!m) return;
-  try {
-    const list = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(m[1])))));
-    if (Array.isArray(list)) {
-      PLACES = list.filter(p => p && p.label && p.address && Array.isArray(p.latlng));
-      savePlaces();
-      setTimeout(() => setStatus(`🏠 ${PLACES.length} saved places added to this device.`), 0);
-    }
-  } catch {}
+  importPlacesCode(m[1]);
   history.replaceState(null, '', location.pathname + location.search);
 })();
 const placeByAddress = a => PLACES.find(h => h.address.toLowerCase() === String(a).trim().toLowerCase());
@@ -399,8 +404,10 @@ async function findAddress(address) {
 }
 async function editPlaces() {
   const list = PLACES.map((p, i) => `${i + 1}. ${p.label}`).join('\n');
-  const choice = prompt((PLACES.length ? `Saved places:\n${list}\n\nType a NUMBER to delete that place,\nor type a NAME to add a new place:` : 'Name for this place (e.g. HOME):'));
+  const choice = prompt((PLACES.length ? `Saved places:\n${list}\n\nType a NUMBER to delete that place,\nor type a NAME to add a new place,\nor PASTE a places setup link:` : 'Name for this place (e.g. HOME),\nor PASTE a places setup link:'));
   if (!choice || !choice.trim()) return;
+  const link = choice.match(/places=([^&\s]+)/);
+  if (link) { if (!importPlacesCode(link[1])) setStatus('⚠️ That setup link looks incomplete — copy the whole link and try again.', true); return; }
   const n = Number(choice.trim());
   if (Number.isInteger(n) && PLACES[n - 1]) {
     if (confirm(`Delete "${PLACES[n - 1].label}" from this device?`)) { PLACES.splice(n - 1, 1); savePlaces(); }
