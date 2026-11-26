@@ -1,0 +1,5784 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-26T16:39:50Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 4276388925,
+  "lat": 2.2917938,
+  "lon": 111.9310806,
+  "tags": {
+    "amenity": "charging_station",
+    "operator": "Petronas Petrol Station"
+  }
+},
+{
+  "type": "node",
+  "id": 4326718690,
+  "lat": 2.2692707,
+  "lon": 111.8579264,
+  "tags": {
+    "amenity": "charging_station",
+    "operator": "Shell",
+    "operator:wikidata": "Q110716465"
+  }
+},
+{
+  "type": "node",
+  "id": 4631705470,
+  "lat": 3.1277894,
+  "lon": 101.6788434,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "capacity": "4",
+    "name": "Cosmos",
+    "name:en": "Cosmos",
+    "name:ms": "Cosmos",
+    "note": "comos vehicle only",
+    "operator": "COSMOS Bangsar"
+  }
+},
+{
+  "type": "node",
+  "id": 4663295908,
+  "lat": 4.4512705,
+  "lon": 100.6238526,
+  "tags": {
+    "amenity": "charging_station",
+    "operator": "ooooooik"
+  }
+},
+{
+  "type": "node",
+  "id": 5104827024,
+  "lat": 1.5180372,
+  "lon": 103.5158573,
+  "tags": {
+    "amenity": "charging_station",
+    "operator": "松家园"
+  }
+},
+{
+  "type": "node",
+  "id": 5426265125,
+  "lat": 3.1525979,
+  "lon": 101.6983896,
+  "tags": {
+    "amenity": "charging_station",
+    "operator": "COSMOS Munshi Abdullah"
+  }
+},
+{
+  "type": "node",
+  "id": 6187385784,
+  "lat": 1.2935896,
+  "lon": 103.6250008,
+  "tags": {
+    "addr:city": "Singapore",
+    "addr:housenumber": "22",
+    "addr:postcode": "637822",
+    "addr:street": "Tuas South Street 5",
+    "amenity": "charging_station",
+    "description": "Turn right upon entrance, lot 131",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058"
+  }
+},
+{
+  "type": "node",
+  "id": 6187385985,
+  "lat": 1.3429484,
+  "lon": 103.6793041,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 6187385986,
+  "lat": 1.3459534,
+  "lon": 103.6809334,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "Lot #96",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6187385987,
+  "lat": 1.3557407,
+  "lon": 103.6918741,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "B1 Carpark lot #6",
+    "operator": "Greenlots"
+  }
+},
+{
+  "type": "node",
+  "id": 6187385988,
+  "lat": 1.3550221,
+  "lon": 103.6935318,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "B1 car park, Lot #103",
+    "operator": "Greenlots"
+  }
+},
+{
+  "type": "node",
+  "id": 6187385989,
+  "lat": 1.3399407,
+  "lon": 103.7066559,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "description": "Basement 2 Lot 137 and 317."
+  }
+},
+{
+  "type": "node",
+  "id": 6187385990,
+  "lat": 1.3354471,
+  "lon": 103.7446382,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "Parking lot 119 and 120",
+    "operator": "Greenlots"
+  }
+},
+{
+  "type": "node",
+  "id": 6187576091,
+  "lat": 1.3040770,
+  "lon": 103.7729998,
+  "tags": {
+    "addr:housenumber": "2",
+    "addr:street": "College Avenue West",
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 6187576092,
+  "lat": 1.3110623,
+  "lon": 103.7766219,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "Multi-storey car park"
+  }
+},
+{
+  "type": "node",
+  "id": 6187576093,
+  "lat": 1.2998480,
+  "lon": 103.7884233,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "Basement 1 lot 11",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058"
+  }
+},
+{
+  "type": "node",
+  "id": 6187576094,
+  "lat": 1.2951494,
+  "lon": 103.7900199,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "L1 sheltered car park, Lot #6",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058"
+  }
+},
+{
+  "type": "node",
+  "id": 6187576095,
+  "lat": 1.3039591,
+  "lon": 103.7926167,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "Nanos building B2 car park, right side of B2 ramp, behind Orange pillar 8, Lot #288 and #289.",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058"
+  }
+},
+{
+  "type": "node",
+  "id": 6187576096,
+  "lat": 1.3787383,
+  "lon": 103.7620578,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "Bukit Panjang Plaza\nB1 Carpark - Lot 91 / 92 / 93\nB2 Carpark - Lot 118 / 119",
+    "operator": "Greenlots"
+  }
+},
+{
+  "type": "node",
+  "id": 6187576097,
+  "lat": 1.2882569,
+  "lon": 103.8058213,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "Electric motorcycles only"
+  }
+},
+{
+  "type": "node",
+  "id": 6187576098,
+  "lat": 1.2900536,
+  "lon": 103.8073769,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 6187608030,
+  "lat": 1.4181808,
+  "lon": 103.8637781,
+  "tags": {
+    "addr:housenumber": "700",
+    "addr:street": "West Camp Road",
+    "amenity": "charging_station",
+    "description": "JTC Aviation One\nLevel 3, multistorey car park,  Lot #14",
+    "operator": "Greenlots"
+  }
+},
+{
+  "type": "node",
+  "id": 6187681000,
+  "lat": 1.3758845,
+  "lon": 103.9252672,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "JTC nanospace@ Tampines\nParking lot 1",
+    "operator": "Greenlots"
+  }
+},
+{
+  "type": "node",
+  "id": 6187681001,
+  "lat": 1.3743132,
+  "lon": 103.9323912,
+  "tags": {
+    "amenity": "charging_station",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6187681002,
+  "lat": 1.3520089,
+  "lon": 103.9401120,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "Carpark entrance C\nB1, Blue zone K25"
+  }
+},
+{
+  "type": "node",
+  "id": 6187681003,
+  "lat": 1.3408252,
+  "lon": 103.9633488,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Shell Recharge",
+    "brand:wikidata": "Q105883058",
+    "description": "Basement 1 carpark, near lift lobby J, lot 287 and 288",
+    "operator": "Shell Recharge",
+    "operator:wikidata": "Q105883058"
+  }
+},
+{
+  "type": "node",
+  "id": 6187681004,
+  "lat": 1.3372971,
+  "lon": 103.9641889,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "Basement 1 Carpark, Lot 110"
+  }
+},
+{
+  "type": "node",
+  "id": 6187681005,
+  "lat": 1.3354179,
+  "lon": 103.9637112,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "B1 car park, Zone C3 (Red pillars)\nNext to South Tower lift lobby, Lot #91",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058"
+  }
+},
+{
+  "type": "node",
+  "id": 6187681006,
+  "lat": 1.3044763,
+  "lon": 103.9047275,
+  "tags": {
+    "amenity": "charging_station",
+    "description": "Katong Square/Hotel Indigo/Holiday Inn Express shared carpark\n\nRequest access from Katong Square"
+  }
+},
+{
+  "type": "node",
+  "id": 6187681007,
+  "lat": 1.3345969,
+  "lon": 103.8840480,
+  "tags": {
+    "addr:housenumber": "9",
+    "addr:street": "Harrison Road",
+    "amenity": "charging_station",
+    "description": "Open air carpark beside main entrance from Harrison road"
+  }
+},
+{
+  "type": "node",
+  "id": 6187681008,
+  "lat": 1.3321623,
+  "lon": 103.8902281,
+  "tags": {
+    "addr:housenumber": "61",
+    "addr:street": "Ubi Road 1",
+    "amenity": "charging_station",
+    "description": "Lobby 2\nBlock 69/61"
+  }
+},
+{
+  "type": "node",
+  "id": 6480314548,
+  "lat": 1.3058096,
+  "lon": 103.7739695,
+  "tags": {
+    "amenity": "charging_station",
+    "name": "Scooter Station"
+  }
+},
+{
+  "type": "node",
+  "id": 6832397585,
+  "lat": 1.3077734,
+  "lon": 103.8299303,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "3",
+    "operator": "BlueSG",
+    "website": "https://www.bluesg.com.sg"
+  }
+},
+{
+  "type": "node",
+  "id": 6970836697,
+  "lat": 1.3614215,
+  "lon": 103.9903191,
+  "tags": {
+    "amenity": "charging_station",
+    "level": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 6970840886,
+  "lat": 1.3614638,
+  "lon": 103.9902225,
+  "tags": {
+    "amenity": "charging_station",
+    "level": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 7092610874,
+  "lat": 1.5587312,
+  "lon": 110.3447372,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "1",
+    "motorcar": "yes",
+    "operator": "Sarawak Energy"
+  }
+},
+{
+  "type": "node",
+  "id": 8059369423,
+  "lat": 1.3269279,
+  "lon": 103.8465671,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "authentication:app": "yes",
+    "capacity": "2",
+    "charge": "SGD 0.594/kWh (AC43); SGD 0.648/kWh (DC50)",
+    "description": "Lots 108, 111, 112, 113, 114",
+    "fee": "yes",
+    "indoor": "yes",
+    "level": "-1",
+    "motorcar": "yes",
+    "operator": "Singapore Power",
+    "parking:fee": "yes",
+    "socket:type2": "2",
+    "socket:type2:output": "43 kW",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "50 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 8323408889,
+  "lat": 3.0650098,
+  "lon": 101.5970579,
+  "tags": {
+    "access": "yes",
+    "addr:place": "ABB Sunway",
+    "alt_name": "EV Charger DCFC",
+    "amenity": "charging_station",
+    "brand": "ABB Terra 53 CJG",
+    "fee": "no",
+    "name": "EV Charger",
+    "name:en": "EV Charger",
+    "note": "This demonstrative DCFC unit was installed by ABB for all users of hybrid and BEV vehicles to use. No fee imposed. The charger was online since February 2017.",
+    "operator": "ABB Malaysia Sunway",
+    "power": "43-50 kW",
+    "socket:chademo": "1",
+    "socket:chademo:output": "50 kW",
+    "socket:type2": "1",
+    "socket:type2:output": "43 kW",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "50 kW",
+    "start_date": "2017-02"
+  }
+},
+{
+  "type": "node",
+  "id": 8323408892,
+  "lat": 3.0819419,
+  "lon": 101.5841829,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Subang Jaya",
+    "addr:country": "MY",
+    "addr:place": "Subang Parade",
+    "addr:street": "Persiaran Kemajuan",
+    "alt_name": "EV Charger AC",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "capacity": "22 kW",
+    "charge": "chargEV subscription",
+    "description": "AC destination chargers",
+    "fee": "yes",
+    "name": "EV Charger",
+    "name:en": "EV Charger",
+    "note": "3 units AC destination chargers",
+    "operator": "chargEV",
+    "socket:type2": "3",
+    "socket:type2:output": "22 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 8326566629,
+  "lat": 3.0814414,
+  "lon": 101.5824283,
+  "tags": {
+    "alt_name": "EV Charger AC",
+    "amenity": "charging_station",
+    "description": "chargEV 3.7 kW (2 unit)",
+    "fee": "yes",
+    "operator": "chargEV",
+    "output": "3.7 kW",
+    "payment:subscription": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8326566630,
+  "lat": 3.0844995,
+  "lon": 101.5835375,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Glenmarie",
+    "addr:country": "MY",
+    "addr:place": "Petronas Temasya Glenmarie",
+    "addr:street": "Federal Highway",
+    "alt_name": "EV Charger AC",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "capacity": "22 kW",
+    "charge": "chargEV subscription",
+    "description": "AC destination charger",
+    "fee": "yes",
+    "name": "EV Charger",
+    "name:en": "EV Charger",
+    "operator": "chargEV",
+    "socket:type2": "1",
+    "socket:type2:output": "22 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 8326566631,
+  "lat": 3.0806120,
+  "lon": 101.5723465,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Shah Alam",
+    "addr:country": "MY",
+    "addr:place": "Petronas Batu Tiga",
+    "addr:street": "Federal Highway",
+    "alt_name": "EV Charger AC",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "capacity": "22 kW",
+    "charge": "chargEV subscription",
+    "description": "AC destination charger",
+    "fee": "yes",
+    "name": "EV Charger",
+    "name:en": "EV Charger",
+    "operator": "chargEV",
+    "payment:subscription": "yes",
+    "socket:type2": "1",
+    "socket:type2:output": "22 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 8362857163,
+  "lat": 1.3274144,
+  "lon": 103.8525151,
+  "tags": {
+    "access": "customers",
+    "amenity": "charging_station",
+    "authentication:app": "yes",
+    "capacity": "4",
+    "charge": "SGD 1/hour",
+    "covered": "no",
+    "fee": "yes",
+    "motorcar": "yes",
+    "operator": "BlueSG",
+    "parking:fee": "yes",
+    "socket:type2": "4",
+    "socket:type2:output": "3.7 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 8366097714,
+  "lat": 3.1337766,
+  "lon": 101.6096955,
+  "tags": {
+    "access": "customers",
+    "addr:city": "Kampung Sungai Kayu Ara",
+    "addr:place": "Vision Motorsports",
+    "alt_name": "Exicom 40 kW DC",
+    "alt_name:en": "PEKEMA chargers",
+    "amenity": "charging_station",
+    "capacity": "22, 40 kW",
+    "description": "Exicom Harmony DC wallbox.",
+    "fee": "no",
+    "motorcar": "yes",
+    "motorcycle": "no",
+    "name": "EV Charger",
+    "name:en": "EV Charger",
+    "note": "One of the earliest rapid chargers installed in Klang Valley. Much due to the forward vision of its owner, Raja Petra Marudin, toward the adoption of BEV in Malaysia.",
+    "operator": "Vision Motorsports",
+    "socket:chademo": "1",
+    "socket:type2": "1",
+    "socket:type2_combo": "1",
+    "truck": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8366319578,
+  "lat": 2.3948999,
+  "lon": 102.2236875,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Ayer Keroh",
+    "addr:country": "MY",
+    "addr:place": "Ayer Keroh R&R Southbound",
+    "addr:street": "North-South Expressway Southbound",
+    "alt_name": "EV Charger ACDC",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "charge": "RM1.20 per minute",
+    "description": "ABB Terra CJG AC and DC fast charger, a multi-standards unit rated for charging at 43 kW AC and 50 kW DC.",
+    "fee": "yes",
+    "motorcar": "yes",
+    "name": "JomCharge",
+    "note": "1st public EV rapid charger in Malaysia. Operational around October 2020. Could not charge by kWhr yet.",
+    "operator": "JomCharge",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "power": "43-50 kW",
+    "socket:chademo": "1",
+    "socket:chademo:output": "50 kW",
+    "socket:type2": "1",
+    "socket:type2:output": "43 kW",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "50 kW",
+    "website": "https://www.plugshare.com/location/250076"
+  }
+},
+{
+  "type": "node",
+  "id": 8369963394,
+  "lat": 2.3982849,
+  "lon": 102.2196277,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Ayer Keroh",
+    "addr:country": "MY",
+    "addr:place": "Ayer Keroh R&R Northbound",
+    "addr:street": "North-South Expressway Northbound",
+    "alt_name": "EV Charger ACDC",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "charge": "RM1.20 per minute",
+    "description": "ABB Terra CJG AC and DC fast charger, a multi-standards unit rated for charging at 43 kW AC and 50 kW DC.",
+    "fee": "yes",
+    "motorcar": "yes",
+    "name": "JomCharge",
+    "note": "2nd public EV rapid charger in Malaysia. Operational around December 2020. Could not charge fee by kWhr yet.",
+    "operator": "JomCharge",
+    "power": "43-50 kW",
+    "socket:chademo": "1",
+    "socket:chademo:output": "50 kW",
+    "socket:type2": "1",
+    "socket:type2:output": "43 kW",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "50 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 8370035577,
+  "lat": 5.3332752,
+  "lon": 103.1483691,
+  "tags": {
+    "access": "customers",
+    "alt_name": "EV Charger AC",
+    "amenity": "charging_station",
+    "brand": "BMW i Wallbox",
+    "charge": "Guests and facilities customers.",
+    "description": "The EVSE was provided in good faith by MyEVOC. The hotel operate it as a service to its guests.",
+    "fee": "yes",
+    "motorcar": "yes",
+    "name": "EV Charger",
+    "name:en": "EV Charger",
+    "note": "This installation was done after the one at Awana Kijal in an effort by MyEVOC to cover the East Coast with charging infrastructure.",
+    "operator": "Hotel Tanjong Vista",
+    "ref": "BMW I Wallbox",
+    "socket:type2": "1",
+    "socket:type2:current": "32",
+    "socket:type2:output": "22 kW",
+    "socket:type2:voltage": "400"
+  }
+},
+{
+  "type": "node",
+  "id": 8370035578,
+  "lat": 4.3886294,
+  "lon": 103.4559755,
+  "tags": {
+    "access": "customers",
+    "alt_name": "EV Charger AC",
+    "amenity": "charging_station",
+    "brand": "BMW i Wallbox",
+    "charge": "Guests and facilities customers.",
+    "description": "The EVSE was provided in good faith by MyEVOC. The resort operate it as a service to its guests.",
+    "fee": "yes",
+    "motorcar": "yes",
+    "name": "EV Charger",
+    "name:en": "EV Charger",
+    "note": "This is the first public EV Charger in the East Coast made possible with a direct involvement of MyEVOC. Users have to be hotel guest or restaurant customers.",
+    "operator": "Resorts World Kijal",
+    "ref": "BMW I Wallbox",
+    "socket:type2": "1",
+    "socket:type2:current": "32",
+    "socket:type2:output": "22 kW",
+    "socket:type2:voltage": "400"
+  }
+},
+{
+  "type": "node",
+  "id": 8559980141,
+  "lat": 3.0353047,
+  "lon": 101.5570565,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Shah Alam",
+    "addr:country": "MY",
+    "addr:place": "Zaibar Automobile",
+    "alt_name": "PEKEMA charger",
+    "amenity": "charging_station",
+    "brand": "Exicom Harmony",
+    "capacity": "22-60 kW",
+    "description": "Zaibar 1st DCFC",
+    "fee": "no",
+    "name": "EV Charger",
+    "note": "Installed as part of PEKEMA's strategy to catalyse EV fast charging network. This 2nd installation in the series.",
+    "operator": "Pekema Malaysia",
+    "socket:chademo": "1",
+    "socket:chademo:output": "60 kW",
+    "socket:type2": "1",
+    "socket:type2:output": "22 kW",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "60 kW",
+    "start_date": "2021-03-20"
+  }
+},
+{
+  "type": "node",
+  "id": 8566605832,
+  "lat": 4.7726251,
+  "lon": 100.7614680,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Taiping",
+    "addr:country": "MY",
+    "addr:place": "Bukit Gantang Rest Area Northbound",
+    "addr:street": "North-South Expressway Northbound",
+    "alt_name": "EV Charger ACDC",
+    "amenity": "charging_station",
+    "brand": "ABB Terra CJG",
+    "capacity": "43-50 kW",
+    "charge": "RM1.20 per minute",
+    "description": "ACDC fast/rapid charger",
+    "fee": "yes",
+    "name": "EV Charger",
+    "note": "Installed as part of effort to cover North-South corridor with rapid charging service.",
+    "operator": "EV Connection",
+    "socket:chademo": "1",
+    "socket:chademo:output": "50 kW",
+    "socket:type2": "1",
+    "socket:type2:output": "43 kW",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "50 kW",
+    "start_date": "2021-03"
+  }
+},
+{
+  "type": "node",
+  "id": 8568358419,
+  "lat": 4.7738068,
+  "lon": 100.7552531,
+  "tags": {
+    "addr:city": "Taiping",
+    "addr:country": "MY",
+    "addr:place": "Bukit Gantang Rest Area Southbound",
+    "addr:street": "North-South Expressway Southbound",
+    "alt_name": "EV Charger ACDC",
+    "amenity": "charging_station",
+    "brand": "ABB Terra CJG",
+    "capacity": "43-50 kW",
+    "charge": "RM1.20 per minute",
+    "description": "ACDC fast/rapid charger",
+    "fee": "yes",
+    "name": "EV Charger",
+    "note": "Installed as part of effort to cover North-South corridor with rapid charging service.",
+    "operator": "EV Connection",
+    "socket:chademo": "1",
+    "socket:chademo:output": "50 kW",
+    "socket:type2": "1",
+    "socket:type2:output": "43 kW",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "50 kW",
+    "start_date": "2021-03"
+  }
+},
+{
+  "type": "node",
+  "id": 8939175499,
+  "lat": 1.3006004,
+  "lon": 103.8399626,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "brand:wikipedia": "en:Tesla Supercharger",
+    "capacity": "3",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Tesla Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla, Inc.",
+    "operator:en": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "singaporeorchardcentralsupercharger",
+    "short_name": "Tesla",
+    "socket:type2_combo": "3",
+    "website": "https://www.tesla.com/findus/location/supercharger/singaporeorchardcentralsupercharger"
+  }
+},
+{
+  "type": "node",
+  "id": 8972125866,
+  "lat": 1.3027016,
+  "lon": 103.8520918,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "4",
+    "operator": "BlueSG"
+  }
+},
+{
+  "type": "node",
+  "id": 9082240444,
+  "lat": 1.3916658,
+  "lon": 103.8928146,
+  "tags": {
+    "access": "customers",
+    "amenity": "charging_station",
+    "name": "Electric Car Charging Station",
+    "operator": "Shell",
+    "operator:wikidata": "Q110716465"
+  }
+},
+{
+  "type": "node",
+  "id": 9083535422,
+  "lat": 1.3623461,
+  "lon": 103.8901907,
+  "tags": {
+    "access": "customers",
+    "amenity": "charging_station",
+    "capacity": "4",
+    "name": "Blue SG",
+    "operator": "Blue SG"
+  }
+},
+{
+  "type": "node",
+  "id": 9119751721,
+  "lat": 3.1606063,
+  "lon": 101.7415416,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Kuala Lumpur",
+    "addr:country": "MY",
+    "addr:place": "Utama Motors",
+    "alt_name": "PEKEMA charger",
+    "amenity": "charging_station",
+    "brand": "Exicom Harmony",
+    "capacity": "22, 40 kW",
+    "charge": "FOC initially",
+    "description": "2 Exicom Harmony chargers",
+    "fee": "no",
+    "name": "EV Charger",
+    "note": "Installed as part of PEKEMA's strategy to catalyse EV fast charging network. This is 4th installation in the series.",
+    "operator": "Utama Motors",
+    "socket:type2": "1",
+    "socket:type2:output": "22 kW",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "40 kW",
+    "start_date": "2021-09"
+  }
+},
+{
+  "type": "node",
+  "id": 9149321843,
+  "lat": 1.3243560,
+  "lon": 103.8421054,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "authentication:app": "yes",
+    "authentication:membership_card": "yes",
+    "capacity": "1",
+    "charge": "SGD 0.55/kWh",
+    "charging_station:output": "50 kW",
+    "covered": "no",
+    "fee": "yes",
+    "motorcar": "yes",
+    "opening_hours": "24/7",
+    "operator": "Shell",
+    "operator:wikidata": "Q110716465",
+    "operator:wikipedia": "en:Royal Dutch Shell",
+    "socket:type2:output": "43 kW",
+    "socket:type2_combo:output": "50 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 9165216476,
+  "lat": 1.3139056,
+  "lon": 103.6952615,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "authentication:card": "yes",
+    "capacity": "4",
+    "covered": "yes",
+    "level": "2",
+    "location": "Basement lots 247, 248, 380, 381",
+    "operator": "SP Group",
+    "parking:fee": "yes",
+    "socket:type2": "4",
+    "socket:type2:output": "43 kW",
+    "socket:type2_combo": "4",
+    "socket:type2_combo:output": "50 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 9173640665,
+  "lat": 3.1616628,
+  "lon": 101.6232750,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Kuala Lumpur",
+    "addr:country": "MY",
+    "addr:place": "Nizra Building, Sungai Penchala",
+    "alt_name": "PEKEMA charger",
+    "amenity": "charging_station",
+    "amperage": "100",
+    "brand": "Exicom Harmony",
+    "capacity": "60 kW",
+    "charge": "FOC initially",
+    "description": "Exicom Harmony fast charger",
+    "fee": "no",
+    "name": "EV Charger",
+    "note": "Installed as part of PEKEMA's strategy to catalyse EV fast charging network. This is 5th in the series.",
+    "operator": "Hamza Motors",
+    "socket:chademo": "1",
+    "socket:chademo:output": "50 kW",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "60 kW",
+    "start_date": "2021-09-29",
+    "voltage": "400"
+  }
+},
+{
+  "type": "node",
+  "id": 9173660911,
+  "lat": 1.5309568,
+  "lon": 103.7806642,
+  "tags": {
+    "access": "yes",
+    "addr:city": "Johor Bahru",
+    "addr:country": "MY",
+    "addr:place": "Palkom Motors",
+    "alt_name": "PEKEMA charger",
+    "amenity": "charging_station",
+    "amperage": "100",
+    "brand": "Exicom Harmony",
+    "capacity": "22 kW, 40 kW (100A)",
+    "charge": "FOC initially",
+    "description": "Exicom Harmony Wallbox charger",
+    "fee": "no",
+    "name": "EV Charger",
+    "note": "Installed as part of PEKEMA's strategy to catalyse EV fast charging network. This is 6th in the series.",
+    "operator": "Palkom Motors",
+    "postal_code": "81100",
+    "socket:chademo": "1",
+    "socket:chademo:output": "40 kW",
+    "socket:type2": "1",
+    "socket:type2:output": "22 kW",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "40 kW",
+    "start_date": "2021-10-14",
+    "voltage": "400"
+  }
+},
+{
+  "type": "node",
+  "id": 9238076263,
+  "lat": 1.3162308,
+  "lon": 103.8999522,
+  "tags": {
+    "addr:housenumber": "78",
+    "addr:street": "Changi Road",
+    "amenity": "charging_station",
+    "capacity": "2",
+    "operator": "Singapore Power",
+    "output": "50kW"
+  }
+},
+{
+  "type": "node",
+  "id": 9272089717,
+  "lat": 1.3027555,
+  "lon": 103.9033371,
+  "tags": {
+    "access": "yes",
+    "addr:housename": "Katong V",
+    "addr:housenumber": "30",
+    "addr:street": "East Coast Road",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "capacity": "3",
+    "covered": "no",
+    "fee": "yes",
+    "frequency": "0",
+    "level": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger Katong V",
+    "name:en": "Tesla Supercharger Katong V",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "singaporekatongvsupercharger",
+    "socket:type2:output": "250 kW",
+    "socket:type2_combo": "3",
+    "socket:type2_combo:output": "250 kW",
+    "website": "https://www.tesla.com/findus/location/supercharger/singaporekatongvsupercharger"
+  }
+},
+{
+  "type": "node",
+  "id": 9296913495,
+  "lat": 3.1212153,
+  "lon": 101.6551042,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "name": "EV Charge",
+    "name:en": "EV Charge"
+  }
+},
+{
+  "type": "node",
+  "id": 9378705731,
+  "lat": 5.3418030,
+  "lon": 100.2714113,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "capacity": "2",
+    "operator": "Malaysian Green Technology And Climate Change Corporation (MTGC)"
+  }
+},
+{
+  "type": "node",
+  "id": 9611628937,
+  "lat": 1.4062174,
+  "lon": 103.9023380,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "brand:wikipedia": "en:Tesla Supercharger",
+    "capacity": "3",
+    "charging_station:output": "250kW",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Singapore Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "note": "aprox location",
+    "opening_hours": "24/7",
+    "operator": "Tesla",
+    "operator:en": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "operator:wikipedia": "en:Tesla, Inc.",
+    "ref:tesla": "singaporewaterwaypointsupercharger",
+    "short_name": "Tesla",
+    "socket:type2_combo": "3",
+    "source": "https://www.tesla.com/findus/location/supercharger/singaporewaterwaypointsupercharger",
+    "website": "https://www.tesla.com/findus/location/supercharger/singaporewaterwaypointsupercharger"
+  }
+},
+{
+  "type": "node",
+  "id": 9621281408,
+  "lat": 1.3085000,
+  "lon": 103.8587944,
+  "tags": {
+    "amenity": "charging_station",
+    "operator": "BlueSG"
+  }
+},
+{
+  "type": "node",
+  "id": 9626165813,
+  "lat": 5.4106850,
+  "lon": 100.3019409,
+  "tags": {
+    "access": "residents",
+    "amenity": "charging_station",
+    "brand": "Hager",
+    "capacity": "1",
+    "socket": "Type 2 (Mennekes)"
+  }
+},
+{
+  "type": "node",
+  "id": 9626165814,
+  "lat": 5.4209418,
+  "lon": 100.3249895,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "2",
+    "name": "BMW Eletric Vehicle Chargging Point",
+    "not:operator:wikidata": "Q26678",
+    "operator": "ChargEV",
+    "socket": "type 2 Cable"
+  }
+},
+{
+  "type": "node",
+  "id": 9626165815,
+  "lat": 5.3706501,
+  "lon": 100.2743624,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "name": "Ecoworld Gallery",
+    "operator": "ChargEV",
+    "socket": "type2 (Socket)"
+  }
+},
+{
+  "type": "node",
+  "id": 9627733668,
+  "lat": 1.2922330,
+  "lon": 103.8596813,
+  "tags": {
+    "access": "yes",
+    "addr:housename": "Millenia Walk",
+    "addr:housenumber": "9",
+    "addr:postcode": "039596",
+    "addr:street": "Raffles Boulevard",
+    "amenity": "charging_station",
+    "branch": "Millenia Walk",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "capacity": "3",
+    "charging_station:output": "250 kW",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger - Millenia Walk",
+    "name:en": "Tesla Supercharger - Millenia Walk",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla",
+    "operator:en": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "singaporemilleniawalksupercharger",
+    "short_name": "Tesla",
+    "socket:type2_combo": "3",
+    "socket:type2_combo:output": "250 kW",
+    "website": "https://www.tesla.com/findus/location/supercharger/singaporemilleniawalksupercharger"
+  }
+},
+{
+  "type": "node",
+  "id": 9627751468,
+  "lat": 1.3069522,
+  "lon": 103.7881631,
+  "tags": {
+    "access": "private",
+    "addr:housename": "The Star Vista",
+    "addr:housenumber": "1",
+    "addr:postcode": "138617",
+    "addr:street": "Vista Exchange Green",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "capacity": "3",
+    "charging_station:output": "250 kW",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger - The Star Vista",
+    "name:en": "Tesla Supercharger - The Star Vista",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla, Inc.",
+    "operator:en": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "singaporestarvistasupercharger",
+    "short_name": "Tesla",
+    "socket:type2_combo": "3",
+    "socket:type2_combo:output": "250 kW",
+    "website": "https://www.tesla.com/findus/location/supercharger/singaporestarvistasupercharger"
+  }
+},
+{
+  "type": "node",
+  "id": 9858405298,
+  "lat": 1.3119367,
+  "lon": 103.8635310,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "1",
+    "charging_station:output": "30kW",
+    "covered": "yes",
+    "fee": "yes",
+    "level": "0",
+    "operator": "Charge+"
+  }
+},
+{
+  "type": "node",
+  "id": 9858420584,
+  "lat": 1.3118791,
+  "lon": 103.8635739,
+  "tags": {
+    "access": "yes",
+    "addr:country": "SG",
+    "addr:housename": "CT Hub 2",
+    "addr:housenumber": "114",
+    "addr:postcode": "338729",
+    "addr:street": "Lavender Street",
+    "amenity": "charging_station",
+    "capacity": "2",
+    "charging_station:output": "120kW",
+    "covered": "yes",
+    "description": "Charge+ Turbocharger at CT Hub 2 Lots 8, 9",
+    "fee": "yes",
+    "level": "0",
+    "manufacturer": "Siemens",
+    "operator": "Charge+",
+    "parking:fee": "no",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "60kW"
+  }
+},
+{
+  "type": "node",
+  "id": 9858450176,
+  "lat": 1.3489596,
+  "lon": 103.8376137,
+  "tags": {
+    "amenity": "charging_station",
+    "operator": "Shell"
+  }
+},
+{
+  "type": "node",
+  "id": 9963470059,
+  "lat": 3.0444818,
+  "lon": 101.7064622,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "50kW",
+    "charge": "MYR1.20/min",
+    "fee": "yes",
+    "name": "Kuro EV (M) Sdn Bhd",
+    "name:en": "Kuro EV (M) Sdn Bhd",
+    "name:ms": "Kuro EV (M) Sdn Bhd",
+    "operator": "Kuro EV Malaysia",
+    "payment:app": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9998908020,
+  "lat": 1.3535358,
+  "lon": 103.9561861,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "name": "BlueSG"
+  }
+},
+{
+  "type": "node",
+  "id": 10036337915,
+  "lat": 1.3739730,
+  "lon": 103.8904969,
+  "tags": {
+    "amenity": "charging_station",
+    "name": "BlueSG"
+  }
+},
+{
+  "type": "node",
+  "id": 10063847912,
+  "lat": 4.5981380,
+  "lon": 101.0761023,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "1",
+    "fee": "no",
+    "operator": "ChargEV"
+  }
+},
+{
+  "type": "node",
+  "id": 10287172719,
+  "lat": 1.3111460,
+  "lon": 103.8640258,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "4",
+    "covered": "yes",
+    "fee": "yes",
+    "level": "0",
+    "operator": "Singapore Power",
+    "socket:type2": "2",
+    "socket:type2:output": "43 kW",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "50 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 10611615451,
+  "lat": 1.3186269,
+  "lon": 103.8335768,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "1",
+    "operator": "Singapore Power"
+  }
+},
+{
+  "type": "node",
+  "id": 10702069371,
+  "lat": 1.3253531,
+  "lon": 103.8485401,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "CDG Engie",
+    "capacity": "4",
+    "charge": "0.59 SGD/kWh",
+    "covered": "no",
+    "fee": "yes",
+    "level": "0",
+    "manufacturer": "Wallbox",
+    "operator": "CDG Engie",
+    "payment:app": "yes",
+    "socket:type2": "4",
+    "socket:type2:current": "32",
+    "socket:type2:output": "22 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 10877063833,
+  "lat": 1.3133248,
+  "lon": 103.9007334,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "fee": "yes",
+    "operator": "Comfort DelGro"
+  }
+},
+{
+  "type": "node",
+  "id": 10919668792,
+  "lat": 3.0656547,
+  "lon": 101.6630485,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ABB Terra",
+    "capacity": "18",
+    "charge": "MYR0.50/min",
+    "covered": "yes",
+    "fee": "yes",
+    "operator": "Gentari / EV Connection",
+    "payment:app": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10919805096,
+  "lat": 3.1429376,
+  "lon": 101.7106726,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Kempower",
+    "capacity": "225kW",
+    "charge": "MYR1.20/kWh",
+    "covered": "yes",
+    "fee": "yes",
+    "operator": "ChargEV Yinson Green Tech",
+    "payment:electronic_purses": "yes",
+    "website": "https://chargev.my"
+  }
+},
+{
+  "type": "node",
+  "id": 10919836503,
+  "lat": 3.0491375,
+  "lon": 101.7057034,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "BMW i",
+    "capacity": "22kW",
+    "charge": "MYR1 for first 2 hour, subsequent hour MYR2.80",
+    "covered": "no",
+    "fee": "yes",
+    "operator": "Shell Recharge / ParkEasy",
+    "payment:app": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11012000772,
+  "lat": 1.3698645,
+  "lon": 103.8842485,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "BlueSG",
+    "level": "0",
+    "motorcar": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11027104974,
+  "lat": 3.1301251,
+  "lon": 101.6420686,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "ChargEV"
+  }
+},
+{
+  "type": "node",
+  "id": 11039879139,
+  "lat": 1.2967027,
+  "lon": 103.8549566,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "covered": "no",
+    "fee": "yes",
+    "level": "0",
+    "operator": "TotalEnergies",
+    "operator:wikidata": "Q154037"
+  }
+},
+{
+  "type": "node",
+  "id": 11054240110,
+  "lat": 5.3292389,
+  "lon": 100.2788465,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargEV",
+    "capacity": "1",
+    "fee": "yes",
+    "socket": "Type 2 and Wall Outlet (BS1363)"
+  }
+},
+{
+  "type": "node",
+  "id": 11193119838,
+  "lat": 6.2937945,
+  "lon": 99.7863269,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 11237231468,
+  "lat": 1.5758687,
+  "lon": 103.7478477,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "capacity": "2",
+    "description": "Fee required: Refer to chargEV app.\n\n2(x) 22kWh Type 2 AC Charger.",
+    "fee": "yes",
+    "name": "chargEV",
+    "network": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.plugshare.com/location/468900",
+    "website": "https://chargev.my/"
+  }
+},
+{
+  "type": "node",
+  "id": 11253973173,
+  "lat": 1.5485937,
+  "lon": 103.7175605,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "capacity": "2",
+    "description": "Fee required: see chargEV app.\n\nchargEV network\n1 unit 60kW DCFC dual CCS2\n1 x 60kW DC CCS2 single plug in\n2 x 30kW DC CCS2 double plug in",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/561022"
+  }
+},
+{
+  "type": "node",
+  "id": 11254037866,
+  "lat": 1.5896637,
+  "lon": 103.6359419,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge BHP R&R Skudai Charging Station",
+    "capacity": "1",
+    "description": "Fee required: Refer to JomCharge app.",
+    "fee": "yes",
+    "name": "JomCharge",
+    "network": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.plugshare.com/location/462166",
+    "website": "https://www.plugshare.com/location/462166"
+  }
+},
+{
+  "type": "node",
+  "id": 11254038968,
+  "lat": 1.5488828,
+  "lon": 103.7143672,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "capacity": "3",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "operator:wikidata": "Q123457836",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/466755"
+  }
+},
+{
+  "type": "node",
+  "id": 11254068691,
+  "lat": 1.5907961,
+  "lon": 103.6359783,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Starbucks R&R Skudai Charging Station",
+    "description": "Fee required: Refer to JomCharge/ chargEV app.",
+    "fee": "yes",
+    "name": "chargEV",
+    "network": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.plugshare.com/location/468643",
+    "website": "https://www.plugshare.com/location/468643"
+  }
+},
+{
+  "type": "node",
+  "id": 11254068692,
+  "lat": 1.5910443,
+  "lon": 103.6352088,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "FamilyMart R&R Skudai EV Charging Station",
+    "capacity": "2",
+    "description": "Fee required: Refer to JomCharge/ chargEV app.",
+    "fee": "yes",
+    "name": "JomCharge",
+    "network": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.plugshare.com/location/473081",
+    "website": "https://www.plugshare.com/location/473081"
+  }
+},
+{
+  "type": "node",
+  "id": 11254118466,
+  "lat": 1.5899128,
+  "lon": 103.6352084,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Caltex R&R Skudai Charging Station",
+    "capacity": "1",
+    "description": "Fee required: Refer to JomCharge / chargEV app.",
+    "fee": "yes",
+    "name": "JomCharge",
+    "network": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.plugshare.com/location/309870",
+    "website": "https://www.plugshare.com/location/309870"
+  }
+},
+{
+  "type": "node",
+  "id": 11287557611,
+  "lat": 1.5872118,
+  "lon": 103.7585463,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "fee": "yes",
+    "name": "JomCharge",
+    "network": "JomCharge",
+    "operator": "JomCharge Eco Palladium Charging Station",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.plugshare.com/location/568929",
+    "website": "https://www.jomcharge.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 11288841798,
+  "lat": 1.3968741,
+  "lon": 103.6268215,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "capacity": "4",
+    "description": "4(x) CCS2 Superchargers up to 250kW.\n1(x) Type 2 Destination Charger up to 11kW.",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Iskandar Puteri Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "not:brand:wikidata": "Q478214",
+    "opening_hours": "24/7",
+    "operator": "Tesla, Inc.",
+    "operator:en": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "407660",
+    "short_name": "Tesla",
+    "socket:type2_combo": "4",
+    "source": "https://www.plugshare.com/location/563725",
+    "website": "https://www.tesla.com/findus/location/supercharger/407660"
+  }
+},
+{
+  "type": "node",
+  "id": 11288842086,
+  "lat": 1.3968486,
+  "lon": 103.6272334,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla, Inc.",
+    "brand:wikidata": "Q478214",
+    "capacity": "2",
+    "description": "2(x) Tesla Destination Charger, up to 11kW.",
+    "fee": "no",
+    "name": "Tesla Destination Charger",
+    "opening_hours": "24/7",
+    "short_name": "Tesla",
+    "source": "https://www.plugshare.com/location/563725",
+    "website": "https://www.tesla.com/findus/location/supercharger/407660"
+  }
+},
+{
+  "type": "node",
+  "id": 11288849242,
+  "lat": 1.3954973,
+  "lon": 103.6253779,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Gentari @ XPark Sunway Iskandar",
+    "capacity": "1",
+    "fee": "yes",
+    "operator": "Gentari"
+  }
+},
+{
+  "type": "node",
+  "id": 11294595079,
+  "lat": 1.5892773,
+  "lon": 103.6359475,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Shell Recharge",
+    "description": "Fee required: Refer to ParkEasy app.",
+    "fee": "yes",
+    "name": "Shell Recharge",
+    "network": "ParkEasy",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.plugshare.com/location/479797",
+    "website": "https://www.shell.com.my/motorists/shell-recharge/shell-recharge-hpc.html"
+  }
+},
+{
+  "type": "node",
+  "id": 11382845488,
+  "lat": 3.0735536,
+  "lon": 101.6072087,
+  "tags": {
+    "access": "customers",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "capacity": "4",
+    "covered": "no",
+    "description": "4 Superchargers, available 24/7, up to 250kW. CCS Compatibility.",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Petaling Jaya Supercharger",
+    "network": "Tesla Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla, Inc.",
+    "operator:en": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "407562",
+    "short_name": "Tesla",
+    "socket:type2_combo": "4",
+    "website": "https://www.tesla.com/findus/location/supercharger/407562"
+  }
+},
+{
+  "type": "node",
+  "id": 11382919205,
+  "lat": 2.4667032,
+  "lon": 102.1198072,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "capacity": "2",
+    "description": "Gentari Setel/JomCharge networked DCFC ABB Terra 184HC CC (180kW/300A-400A/192kVA)\n1 x 180 kW DC CCS2 single nozzle\n2 x 90 kW DC CCS2 dual nozzle",
+    "fee": "yes",
+    "name": "Gentari",
+    "network": "Gentari",
+    "operator": "Gentari"
+  }
+},
+{
+  "type": "node",
+  "id": 11385382711,
+  "lat": 1.5914320,
+  "lon": 103.6353160,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "CHARGE+",
+    "capacity": "2",
+    "description": "Fee required: Refer toCHARGE+ App.\n2x CCS2, Max 120 kWh.",
+    "fee": "yes",
+    "name": "CHARGE+",
+    "network": "CHARGE+",
+    "operator": "CHARGE+",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.plugshare.com/location/575846"
+  }
+},
+{
+  "type": "node",
+  "id": 11391086505,
+  "lat": 2.4452524,
+  "lon": 102.2065328,
+  "tags": {
+    "access": "customers",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "capacity": "4",
+    "description": "4 Superchargers, available 24/7, up to 250kW CCS Compatibility",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Alor Gajah Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "not:brand:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla, Inc.",
+    "operator:en": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "alorgajahmelakasupercharger",
+    "short_name": "Tesla",
+    "socket:type2_combo": "4",
+    "source": "https://www.tesla.com/findus/location/supercharger/alorgajahmelakasupercharger",
+    "website": "https://www.tesla.com/findus/location/supercharger/alorgajahmelakasupercharger"
+  }
+},
+{
+  "type": "node",
+  "id": 11391109082,
+  "lat": 1.9328012,
+  "lon": 103.1878649,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Gentari Network. Fee required: Refer to JomCharge/Setel app.",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "source": "https://www.plugshare.com/location/471796"
+  }
+},
+{
+  "type": "node",
+  "id": 11396044526,
+  "lat": 3.1715556,
+  "lon": 101.6649854,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "covered": "no",
+    "fee": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11414391709,
+  "lat": 1.5386593,
+  "lon": 104.2641710,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "DC Handal",
+    "capacity": "2",
+    "description": "Fee required: Refer to ChargEV or JomCharge app.",
+    "fee": "yes",
+    "name": "DC Handal",
+    "operator": "DC Handal",
+    "payment:app": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/576524"
+  }
+},
+{
+  "type": "node",
+  "id": 11414391710,
+  "lat": 1.5379136,
+  "lon": 104.2675336,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "chargeEV network\n1 unit StarCharge 60kW DCFC dual CCS2\n1 x 60 kW DC CCS2 single plug in\n2 x 30 kW DC CCS2 double plug in",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/554480"
+  }
+},
+{
+  "type": "node",
+  "id": 11414391711,
+  "lat": 1.5406321,
+  "lon": 104.2643074,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "chargEV networked DCFC\n1 x 50 kW DC CCS2\n1 x 50 kW DC CHAdeMO\n1 x 11 kW T2 cabled\n\n2 parking lots. Provide contact number and room number to security guard",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/469276"
+  }
+},
+{
+  "type": "node",
+  "id": 11416040934,
+  "lat": 2.9089805,
+  "lon": 101.6571641,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "GO TO-U",
+    "description": "GO TO-U Network\n\nConnector 1 & 2\n(2) 60kW DC CCS2\n- Uses split energy function; i.e., reserving one connector will reserve both connectors\n\nConnector 3 & 4\n(2) 30kW DC CCS2\n- Power is split 30kW for each connector",
+    "fee": "yes",
+    "name": "GO TO-U",
+    "operator": "GO TO-U",
+    "website": "https://www.plugshare.com/location/480362"
+  }
+},
+{
+  "type": "node",
+  "id": 11416040935,
+  "lat": 2.9088289,
+  "lon": 101.6566397,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "chargEV networked EVSEs\n(2) 22 kW AC Type 2 cabled",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "website": "https://www.plugshare.com/location/266625"
+  }
+},
+{
+  "type": "node",
+  "id": 11481305041,
+  "lat": 1.5930489,
+  "lon": 103.6475928,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargeSini",
+    "capacity": "2",
+    "description": "Fee required: Refer to ChargeSini app",
+    "fee": "yes",
+    "name": "ChargeSini",
+    "operator": "ChargeSini",
+    "website": "https://www.plugshare.com/location/585242"
+  }
+},
+{
+  "type": "node",
+  "id": 11481890856,
+  "lat": 1.5888900,
+  "lon": 103.7564326,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargeSini",
+    "description": "Fee required: Refer to ChargeSini app.\n4(x) CCS2 60kWh.",
+    "fee": "yes",
+    "name": "ChargeSini",
+    "network": "ChargeSini",
+    "operator": "ChargeSini",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/586343"
+  }
+},
+{
+  "type": "node",
+  "id": 11490173943,
+  "lat": 2.7645458,
+  "lon": 101.6830042,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Fee required: Refer to JomCharge or SETEL app.\n1(x) 45KwH CCS2.",
+    "fee": "yes",
+    "name": "Gentari",
+    "not:operator:wikidata": "Q123457836",
+    "operator": "Gentari",
+    "website": "https://www.plugshare.com/location/519290"
+  }
+},
+{
+  "type": "node",
+  "id": 11493155072,
+  "lat": 4.7130900,
+  "lon": 100.9450512,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "description": "Fee required: Refer to JomCharge or SETEL app.\n2(x) 180kWh CCS2.",
+    "fee": "yes",
+    "name": "JomCharge",
+    "operator": "JomCharge",
+    "website": "https://www.plugshare.com/location/217207"
+  }
+},
+{
+  "type": "node",
+  "id": 11500046001,
+  "lat": 3.6628853,
+  "lon": 101.5206194,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Fee required: Refer to JomCharge / chargEV / SETEL app.\n3(x) 180kWh max CCS2 DCFC.",
+    "fee": "no",
+    "name": "JomCharge",
+    "network": "JomCharge",
+    "operator": "Gentari",
+    "website": "https://www.plugshare.com/location/171537"
+  }
+},
+{
+  "type": "node",
+  "id": 11500050760,
+  "lat": 5.3299696,
+  "lon": 100.4997593,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Autel",
+    "description": "Fee required: Refer to Autel app.\n3(x) 22kWh Type 2 AC chargers.\n\nLocated at Vangohh Eminent parking lot building level 2A.",
+    "fee": "yes",
+    "name": "Autel",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/551089"
+  }
+},
+{
+  "type": "node",
+  "id": 11500980138,
+  "lat": 2.3984706,
+  "lon": 102.2217222,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "Fee required: Refer to VIRTA app. 1(x) charging station: - 1(x) 50kWh CCS2 - 1(x) 50kWh CHAdeMo - 1(x) 11kWh Type 2",
+    "fee": "yes",
+    "name": "chargEV",
+    "network": "chargEV",
+    "operator": "chargEV",
+    "website": "https://www.virta.global/"
+  }
+},
+{
+  "type": "node",
+  "id": 11501042949,
+  "lat": 2.3945396,
+  "lon": 102.2239535,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "Fee required: Refer to chargEV app.\n1(x) 22kWh Type 2 socket (bring your own Type 2 cabel).",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "website": "https://www.plugshare.com/location/155237"
+  }
+},
+{
+  "type": "node",
+  "id": 11518965813,
+  "lat": 1.6350433,
+  "lon": 103.6660276,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "covered": "yes",
+    "description": "Fee required: Refer to Gentari Go/ JomCharge/ chargEV/ SETEL / Virta app.\n\n2(x) 22kWh Type 2 AC.\n3(x) 7kWh Type 2 AC.",
+    "fee": "yes",
+    "name": "Gentari",
+    "name:en": "Gentari",
+    "name:ms": "Gentari",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/588362"
+  }
+},
+{
+  "type": "node",
+  "id": 11518984403,
+  "lat": 1.5436137,
+  "lon": 103.7398848,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Fee required: Refer to Gentari Go / SETEL / JomCharge app.\n3(x) 22kWh Type 2",
+    "fee": "yes",
+    "name": "Gentari",
+    "name:en": "Gentari",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/588816"
+  }
+},
+{
+  "type": "node",
+  "id": 11518984680,
+  "lat": 1.5359947,
+  "lon": 103.7535840,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "description": "Fee required: Refer to JomCharge / SETEL app.\n\n2(x) CCS2 max 180kWh DCFC\n\nHours:\nMon-Fri: 8:30AM to 5:30PM\nSat: 8:30AM to 12:30PM\nNot available on Sunday & Public Holiday.",
+    "name": "JomCharge",
+    "operator": "JomCharge",
+    "website": "https://www.plugshare.com/location/363821"
+  }
+},
+{
+  "type": "node",
+  "id": 11521903328,
+  "lat": 1.3246845,
+  "lon": 103.8425155,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Charge+",
+    "capacity": "6",
+    "covered": "no",
+    "fee": "yes",
+    "operator": "Charge+",
+    "payment:app": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11524337214,
+  "lat": 1.5175849,
+  "lon": 103.6729878,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "description": "Fee required: Refer to JomCharge app.\n\nSutera Mall Level 1 Parking Lot (New Wing).\nParking fee apply.\n\nJomCharge network\n1 x 50 kW DC CCS2\n1 x 50 kW DC Chademo\n1 x 22 kW AC T2 AC\n2 x 11 kW AC T2 cabled",
+    "fee": "yes",
+    "name": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/500522"
+  }
+},
+{
+  "type": "node",
+  "id": 11524337215,
+  "lat": 1.5170239,
+  "lon": 103.6700851,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargeSini",
+    "description": "Fee required: Refer to ChargeSini app.\n\nChargeSini Network Operator\n(1) 80kW DC CCS2 (active Apps to lying down the Parking Lock )",
+    "fee": "yes",
+    "name": "ChargeSini",
+    "operator": "ChargeSini",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/534627"
+  }
+},
+{
+  "type": "node",
+  "id": 11524337217,
+  "lat": 1.5170613,
+  "lon": 103.6746135,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "description": "Fee required: Refer to JomCharge App.\n\nScandinavian Volvo Showroom in Johor Bahru.\nJomCharge network\n1 x 50 kW DC CCS2\n1 x 22 kW AC T2 cabled",
+    "fee": "yes",
+    "name": "JomCharge",
+    "name:en": "JomCharge",
+    "name:ms": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/319595"
+  }
+},
+{
+  "type": "node",
+  "id": 11524337369,
+  "lat": 1.5176859,
+  "lon": 103.6722384,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "description": "Fee required: Refer to JomCharge app.\n\nSutera Mall Level 1 Parking Lot (Old Wing).\nParking fee apply.\n\nJomCharge network\n2 x 3.7 kW AC T2 cabled",
+    "fee": "yes",
+    "name": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/484858"
+  }
+},
+{
+  "type": "node",
+  "id": 11524337785,
+  "lat": 1.5175847,
+  "lon": 103.6722432,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargeSini",
+    "description": "Fee required: Refer to ChargeSini app.\n\nSutera Mall Level 1 Parking Lot (Old Wing).\n\nParking fee apply.\n\nChargeSini Network Operator\n2 x 40kW DCFC dual CCS2\n4 x 40kW DC CCS2",
+    "fee": "yes",
+    "name": "ChargeSini",
+    "operator": "ChargeSini",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/576559"
+  }
+},
+{
+  "type": "node",
+  "id": 11524363796,
+  "lat": 1.5156556,
+  "lon": 103.6860800,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Fee required: Refer to chargEV / SETEL app.\n\nParadigm Mall Carpark L2 Pillar C5\nParking fee apply.\n\nGentari/JomCharge network\nCarpark level 2\n3 x 07kW AC T2 cabled\n3 x 22kW AC T2 cabled",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/572489"
+  }
+},
+{
+  "type": "node",
+  "id": 11524363797,
+  "lat": 1.5158835,
+  "lon": 103.6858527,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Shell Recharge",
+    "capacity": "AC 11kW IEC Type 2 Plug",
+    "charge": "Please refer to Shell Recharge App for pricing​",
+    "contact:phone": "1 300 88 1808",
+    "fee": "yes",
+    "name": "Shell Recharge",
+    "network": "Shell Recharge",
+    "not:brand:wikidata": "Q105883058",
+    "operator": "Shell",
+    "operator:wikidata": "Q110716465",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.shell.com.my/electric-vehicle-charging.html"
+  }
+},
+{
+  "type": "node",
+  "id": 11524369957,
+  "lat": 1.4908128,
+  "lon": 103.7420182,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargeSini",
+    "description": "Fee required: Refer to ChargeSini app.\n\nChargeSini Network Operator\n\n3 x 22kW AC TYPE 2 cabled",
+    "fee": "yes",
+    "name": "ChargeSini",
+    "operator": "ChargeSini",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/583563"
+  }
+},
+{
+  "type": "node",
+  "id": 11524379086,
+  "lat": 1.4863458,
+  "lon": 103.7696378,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "chargEV charging network\n1 unit 40 kW DCFC Dual CCS2\n1 x 40 kW DC CCS2 single plug in\n2 x 20 kW DC CCS2 double plug in",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/534691"
+  }
+},
+{
+  "type": "node",
+  "id": 11524379650,
+  "lat": 1.4861604,
+  "lon": 103.7622735,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargeSini",
+    "description": "KSL Resort Johor Bahru City Centre\nLEVEL 3 pillar L3\nChargeSini Network Operator\n1 x 40 kW DCFC dual CCS2 station:\n- 1 x 40 kW CCS2 single plug in\n- 2 x 20 kW CCS2 double plug in\n\n3 x 11 KW AC Type2 cabled",
+    "fee": "yes",
+    "name": "ChargeSini",
+    "operator": "ChargeSini",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/534320"
+  }
+},
+{
+  "type": "node",
+  "id": 11524379651,
+  "lat": 1.4851363,
+  "lon": 103.7627197,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargeSini",
+    "description": "KSL City Mall\nParking Level: level 3 pillar c14\nChargeSini Network Operator\nChargeSini Network Operator\n(3) 11KW AC Type2 (WITH CABLE)",
+    "fee": "yes",
+    "name": "ChargeSini",
+    "operator": "ChargeSini",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/534321"
+  }
+},
+{
+  "type": "node",
+  "id": 11524379853,
+  "lat": 1.4634195,
+  "lon": 103.7621918,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "description": "Zenith Lifestyle Mall Level 2 Parking Lot.\n\nJomCharge network\n1 x 50 kW DC CCS2\n1 x 50 kW DC Chademo\n1 x 43 kW AC T2\n1 x 11 kW AC T2 cabled",
+    "fee": "yes",
+    "name": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/478977"
+  }
+},
+{
+  "type": "node",
+  "id": 11524379854,
+  "lat": 1.4643898,
+  "lon": 103.7625230,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "chargEV network\n2 x 22 kW AC T2 cabled\nLevel 4 bay 40, 41 in front of carpark glass entrance",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/244035"
+  }
+},
+{
+  "type": "node",
+  "id": 11524392039,
+  "lat": 1.4840738,
+  "lon": 103.7744656,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Pelangi Leisure Mall\n\nGentari/Jomcharge netwofk\n3 x 11kW AC T2 cabled",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "operator:wikidata": "Q123457836",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/572490"
+  }
+},
+{
+  "type": "node",
+  "id": 11524392899,
+  "lat": 1.4655091,
+  "lon": 103.7597496,
+  "tags": {
+    "access": "customers",
+    "amenity": "charging_station",
+    "brand": "EV Charging Station DoubleTree by Hilton Hotel Johor Bahru",
+    "description": "Non-network\n2 x BMW wallbox 3.7 kW T2 cabled\nB1-B1E 12",
+    "fee": "no",
+    "website": "https://www.plugshare.com/location/134037"
+  }
+},
+{
+  "type": "node",
+  "id": 11524830242,
+  "lat": 1.4803951,
+  "lon": 103.7650938,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Gentari/JomCharge network\n6 x 11kW AC T2 cabled\n\nNear Entrance/Exit from Jalan Kuning",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "operator:wikidata": "Q123457836",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/564544"
+  }
+},
+{
+  "type": "node",
+  "id": 11524886149,
+  "lat": 1.5793822,
+  "lon": 103.6504208,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/138263"
+  }
+},
+{
+  "type": "node",
+  "id": 11527083846,
+  "lat": 1.5493109,
+  "lon": 103.7963316,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "Fee required: Refer to chargEV app.\n2(x) 129kWh CCS2 DCFC\n2(x) 22kWh Type 2 AC",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/588803"
+  }
+},
+{
+  "type": "node",
+  "id": 11527094771,
+  "lat": 1.5520702,
+  "lon": 103.7983195,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ParkEasy",
+    "description": "Fee required: Refer to ParkEasy app.\n5(x) 22kWh Type 2 Socket (Bring your own Type 2 cabel).\n\nParking fee apply.",
+    "fee": "yes",
+    "name": "ParkEasy",
+    "operator": "ParkEasy",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/220472"
+  }
+},
+{
+  "type": "node",
+  "id": 11527094772,
+  "lat": 1.5516963,
+  "lon": 103.7996184,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "description": "Non Network\n8(x) 7kWh Type 2 Socket (bring your own Type 2 cable)\n\nParking fee apply.",
+    "fee": "no",
+    "name": "IKEA EV Charging Station",
+    "operator": "IKEA",
+    "operator:wikidata": "Q54078",
+    "website": "https://www.plugshare.com/location/137994"
+  }
+},
+{
+  "type": "node",
+  "id": 11542379072,
+  "lat": 1.3972034,
+  "lon": 103.6295452,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "description": "2 units Hager wallbox\n2 x 7kW AC T2 cabled",
+    "fee": "no",
+    "name": "Sunway Big Box EV Charging Station",
+    "website": "https://www.plugshare.com/location/544473"
+  }
+},
+{
+  "type": "node",
+  "id": 11585795009,
+  "lat": 1.2892791,
+  "lon": 103.8369770,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla",
+    "brand:wikidata": "Q478214",
+    "fee": "no",
+    "name": "Tesla Destination Charger",
+    "short_name": "Tesla",
+    "website": "https://www.plugshare.com/location/519544"
+  }
+},
+{
+  "type": "node",
+  "id": 11585795010,
+  "lat": 1.2898342,
+  "lon": 103.8385427,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla",
+    "brand:wikidata": "Q478214",
+    "fee": "no",
+    "name": "Tesla Destination Charger",
+    "short_name": "Tesla",
+    "website": "https://www.plugshare.com/location/567929"
+  }
+},
+{
+  "type": "node",
+  "id": 11585795011,
+  "lat": 3.1281617,
+  "lon": 101.7241665,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla",
+    "brand:wikidata": "Q478214",
+    "covered": "yes",
+    "fee": "no",
+    "name": "Tesla Destination Charger",
+    "name:en": "Tesla Destination Charger",
+    "short_name": "Tesla",
+    "source": "https://www.tesla.com/en_gb/findus/location/charger/SunwayVelocityDestination",
+    "website": "https://www.plugshare.com/location/365469"
+  }
+},
+{
+  "type": "node",
+  "id": 11585801904,
+  "lat": 3.1664141,
+  "lon": 101.6917172,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla, Inc.",
+    "brand:wikidata": "Q478214",
+    "capacity": "6",
+    "description": "6(x) 11kW Tesla Destination Chager.\n\nLocated at Level B2, Zone C11.",
+    "fee": "yes",
+    "name": "Tesla Destination Charger",
+    "short_name": "Tesla",
+    "socket:type2": "6",
+    "socket:type2:output": "11 kW",
+    "source": "https://www.tesla.com/en_gb/findus/location/charger/408763",
+    "website": "https://www.plugshare.com/location/561417"
+  }
+},
+{
+  "type": "node",
+  "id": 11585999017,
+  "lat": 1.4362293,
+  "lon": 103.7863791,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "level": "-2",
+    "level:ref": "B2",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Tesla Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla",
+    "operator:en": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "singaporewoodlandssupercharger",
+    "short_name": "Tesla",
+    "website": "https://www.tesla.com/findus/location/supercharger/singaporewoodlandssupercharger"
+  }
+},
+{
+  "type": "node",
+  "id": 11596719321,
+  "lat": 3.0332795,
+  "lon": 101.7652185,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "Fee required: Refer to chargEV app.\nParking fee may apply.",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/587208"
+  }
+},
+{
+  "type": "node",
+  "id": 11596766851,
+  "lat": 3.0271608,
+  "lon": 101.7541855,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "description": "Fee required: Refer to JomCharge app.\n\n2(x) max 60kWh CCS2 DCFC",
+    "fee": "yes",
+    "name": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/557639"
+  }
+},
+{
+  "type": "node",
+  "id": 11602330395,
+  "lat": 3.0493739,
+  "lon": 101.6721036,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "description": "(6) CCS2 Tesla Superchargers, up to 250kW\n(2) Type 2 Tesla Destination Charger up to 11kW\n\nParking Level: B1 near H19 & J19\n\nParking fee apply.",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Bukit Jalil Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla, Inc.",
+    "operator:en": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "404168",
+    "short_name": "Tesla",
+    "source": "https://www.tesla.com/findus/location/supercharger/404168",
+    "website": "https://www.tesla.com/findus/location/supercharger/404168"
+  }
+},
+{
+  "type": "node",
+  "id": 11627248777,
+  "lat": 1.3002855,
+  "lon": 103.8524749,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "fee": "yes",
+    "level": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11637282520,
+  "lat": 5.3422508,
+  "lon": 100.4352292,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "description": "Fee required: Refer to JomCharge app",
+    "fee": "yes",
+    "name": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/550216"
+  }
+},
+{
+  "type": "node",
+  "id": 11637282521,
+  "lat": 5.3420580,
+  "lon": 100.4329380,
+  "tags": {
+    "access": "customers",
+    "amenity": "charging_station",
+    "brand": "Icon Hotel Penang EV Charging Station",
+    "website": "https://www.plugshare.com/location/174955"
+  }
+},
+{
+  "type": "node",
+  "id": 11637282522,
+  "lat": 5.3361309,
+  "lon": 100.4342556,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "fee": "yes",
+    "name": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/577580"
+  }
+},
+{
+  "type": "node",
+  "id": 11637282900,
+  "lat": 5.3686435,
+  "lon": 100.4146636,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargeSini",
+    "fee": "yes",
+    "name": "ChargeSini",
+    "operator": "ChargeSini",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/578282"
+  }
+},
+{
+  "type": "node",
+  "id": 11637282901,
+  "lat": 5.3735055,
+  "lon": 100.4074139,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/113412"
+  }
+},
+{
+  "type": "node",
+  "id": 11637284127,
+  "lat": 5.3548987,
+  "lon": 100.4177256,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "fee": "yes",
+    "name": "chargEV",
+    "opening_hours": "24/7",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/468894"
+  }
+},
+{
+  "type": "node",
+  "id": 11637284128,
+  "lat": 5.3543662,
+  "lon": 100.4161411,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/162245"
+  }
+},
+{
+  "type": "node",
+  "id": 11637290224,
+  "lat": 5.3547452,
+  "lon": 100.4196649,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/545359"
+  }
+},
+{
+  "type": "node",
+  "id": 11637290225,
+  "lat": 5.3545322,
+  "lon": 100.4190837,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "fee": "yes",
+    "name": "JomCharge",
+    "opening_hours": "24/7",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/482893"
+  }
+},
+{
+  "type": "node",
+  "id": 11637290226,
+  "lat": 5.3548696,
+  "lon": 100.4179769,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "fee": "yes",
+    "name": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/478674"
+  }
+},
+{
+  "type": "node",
+  "id": 11645277239,
+  "lat": 5.3547461,
+  "lon": 100.4185542,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "TNB Electron",
+    "description": "Fee required: Refer to GO TO-U app.\n\n1(x) DCFC station:\n- 2(x) max 200kWh CCS2",
+    "fee": "yes",
+    "name": "TNB Electron",
+    "opening_hours": "24/7",
+    "operator": "TNB Electron",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/593365"
+  }
+},
+{
+  "type": "node",
+  "id": 11652066341,
+  "lat": 5.3430476,
+  "lon": 100.4336859,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "EVlution",
+    "fee": "yes",
+    "name": "EVlution",
+    "operator": "EVlution",
+    "website": "https://www.plugshare.com/location/568119"
+  }
+},
+{
+  "type": "node",
+  "id": 11652108649,
+  "lat": 5.3457183,
+  "lon": 100.4344730,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "Fee required: Refer to chargEV app.\n1(x) 22kWh AC Type 2 cabled",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/468890"
+  }
+},
+{
+  "type": "node",
+  "id": 11662266719,
+  "lat": 3.0058004,
+  "lon": 101.7250896,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "fee": "yes",
+    "name": "Gentari",
+    "name:en": "Gentari",
+    "name:ms": "Gentari",
+    "operator": "Gentari",
+    "operator:wikidata": "Q123457836",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/572916"
+  }
+},
+{
+  "type": "node",
+  "id": 11665352902,
+  "lat": 5.2234264,
+  "lon": 100.4262414,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla",
+    "brand:wikidata": "Q478214",
+    "charge": "0.88 MYR/1 kWh",
+    "fee": "yes",
+    "name": "Tesla Destination Charger",
+    "payment:app": "yes",
+    "short_name": "Tesla",
+    "source": "https://www.tesla.com/findus/list/chargers/Malaysia",
+    "website": "https://www.plugshare.com/location/598420"
+  }
+},
+{
+  "type": "node",
+  "id": 11665362189,
+  "lat": 5.3963354,
+  "lon": 100.2904721,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla, Inc.",
+    "brand:wikidata": "Q478214",
+    "fee": "no",
+    "name": "Tesla Destination Charger",
+    "short_name": "Tesla",
+    "source": "https://www.tesla.com/findus/location/charger/409326",
+    "website": "https://www.plugshare.com/location/581301"
+  }
+},
+{
+  "type": "node",
+  "id": 11665406425,
+  "lat": 5.2390154,
+  "lon": 100.4445692,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "fee": "yes",
+    "name": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/413465"
+  }
+},
+{
+  "type": "node",
+  "id": 11665406426,
+  "lat": 5.2394057,
+  "lon": 100.4517032,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "fee": "yes",
+    "name": "JomCharge",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/597150"
+  }
+},
+{
+  "type": "node",
+  "id": 11670619688,
+  "lat": 1.5487863,
+  "lon": 103.7164340,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/129148"
+  }
+},
+{
+  "type": "node",
+  "id": 11676052933,
+  "lat": 1.3971185,
+  "lon": 103.6316071,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/587617"
+  }
+},
+{
+  "type": "node",
+  "id": 11738057754,
+  "lat": 4.6206763,
+  "lon": 101.1479652,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "chargEV network:\n2(x) 30kWh CCS2.",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/542152"
+  }
+},
+{
+  "type": "node",
+  "id": 11738057755,
+  "lat": 4.6203541,
+  "lon": 101.1483179,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Gentari Network:\n2(x) max. 100kWh CCS2.",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/543684"
+  }
+},
+{
+  "type": "node",
+  "id": 11757683232,
+  "lat": 2.8851044,
+  "lon": 101.6172601,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "capacity": "6",
+    "description": "6(x) 250kWh Tesla Superchager.",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Dengkil Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla, Inc.",
+    "operator:en": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "404458",
+    "short_name": "Tesla",
+    "socket:type2_combo": "6",
+    "socket:type2_combo:output": "250 kW",
+    "source": "https://www.tesla.com/findus/location/supercharger/404458",
+    "website": "https://www.tesla.com/findus/location/supercharger/404458"
+  }
+},
+{
+  "type": "node",
+  "id": 11757683233,
+  "lat": 2.8849195,
+  "lon": 101.6173062,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla, Inc.",
+    "brand:wikidata": "Q478214",
+    "description": "18(x) 11kWh Tesla Destination Charger",
+    "fee": "no",
+    "name": "Tesla Destination Charger",
+    "short_name": "Tesla",
+    "source": "https://www.tesla.com/en_sg/findus/location/charger/404458",
+    "website": "https://www.plugshare.com/location/602061"
+  }
+},
+{
+  "type": "node",
+  "id": 11757695500,
+  "lat": 2.8860489,
+  "lon": 101.6163671,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "name": "BMW Destination Charging Station",
+    "website": "https://www.plugshare.com/location/463903"
+  }
+},
+{
+  "type": "node",
+  "id": 11763114271,
+  "lat": 2.9701078,
+  "lon": 101.7161964,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla, Inc.",
+    "brand:wikidata": "Q478214",
+    "name": "Tesla Destination Charger",
+    "short_name": "Tesla",
+    "source": "https://www.tesla.com/en_sg/findus/location/charger/412673",
+    "website": "https://www.plugshare.com/location/602125"
+  }
+},
+{
+  "type": "node",
+  "id": 11763124114,
+  "lat": 2.9705213,
+  "lon": 101.7135594,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Shell Recharge",
+    "fee": "yes",
+    "name": "Shell Recharge",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/186311"
+  }
+},
+{
+  "type": "node",
+  "id": 11824773064,
+  "lat": 1.6030099,
+  "lon": 103.6224559,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "DC Handal",
+    "description": "4x CCS2 (max 200kWh)",
+    "name": "DC Handal",
+    "operator": "DC Handal",
+    "website": "https://www.plugshare.com/location/604669"
+  }
+},
+{
+  "type": "node",
+  "id": 11830833245,
+  "lat": 1.4757432,
+  "lon": 103.7415311,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.plugshare.com/location/611758"
+  }
+},
+{
+  "type": "node",
+  "id": 11830833246,
+  "lat": 1.4758797,
+  "lon": 103.7406661,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.plugshare.com/location/611559"
+  }
+},
+{
+  "type": "node",
+  "id": 11834661631,
+  "lat": 6.1206843,
+  "lon": 102.2416544,
+  "tags": {
+    "access": "customers",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "capacity": "2",
+    "name": "Perdana Hotel EV Charging Station",
+    "socket:type2": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 11846040050,
+  "lat": 1.6022872,
+  "lon": 103.6456799,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Gentari Network:\n2 x 50kW DC CCS2\n\nUse Gentari Go / JomCharge / chargEV / Virta app to activate.",
+    "fee": "yes",
+    "name": "Gentari",
+    "name:en": "Gentari",
+    "name:ms": "Gentari",
+    "operator": "Gentari",
+    "operator:wikidata": "Q123457836",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/606364"
+  }
+},
+{
+  "type": "node",
+  "id": 11875216016,
+  "lat": 2.9696481,
+  "lon": 101.7134794,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "DC Handal",
+    "fee": "yes",
+    "name": "DC Handal",
+    "operator": "DC Handal",
+    "payment:app": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.dchandal.com/station/ioi-city-mall-putrajaya-lg-zone-d/",
+    "website": "https://www.plugshare.com/location/593944"
+  }
+},
+{
+  "type": "node",
+  "id": 11875321339,
+  "lat": 2.9698847,
+  "lon": 101.7154700,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "name": "Tesla Supercharger",
+    "operator": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "short_name": "Tesla",
+    "source": "https://www.tesla.com/en_US/findus/list/superchargers/Malaysia",
+    "website": "https://www.plugshare.com/location/616230"
+  }
+},
+{
+  "type": "node",
+  "id": 11876524839,
+  "lat": 1.5175880,
+  "lon": 103.6730687,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargeSini",
+    "description": "Fee required: Refer to ChargeSini app.\n\nSutera Mall Level 1 Parking Lot (New Wing).\n\nParking fee apply.\n\nChargeSini Network Operator\n2 x 40kW DCFC dual CCS2\n4 x 40kW DC CCS2",
+    "fee": "yes",
+    "name": "ChargeSini",
+    "operator": "ChargeSini",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/576559"
+  }
+},
+{
+  "type": "node",
+  "id": 11917937514,
+  "lat": 1.3137542,
+  "lon": 103.8656726,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "2",
+    "charging_station:output": "200 kW",
+    "covered": "yes",
+    "fee": "yes",
+    "level": "0",
+    "location": "Trion Building",
+    "manufacturer": "Delta",
+    "operator": "SP Mobility"
+  }
+},
+{
+  "type": "node",
+  "id": 11917937518,
+  "lat": 1.3349071,
+  "lon": 103.8414208,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11917937537,
+  "lat": 1.3139238,
+  "lon": 103.8654534,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "4",
+    "charging_station:output": "22 kW",
+    "covered": "yes",
+    "fee": "yes",
+    "level": "0",
+    "operator": "SP Mobility",
+    "parking:fee": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11934605603,
+  "lat": 3.1672296,
+  "lon": 101.6919158,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "EVGuru",
+    "fee": "yes",
+    "name": "EVGuru",
+    "operator": "EVGuru",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/591048"
+  }
+},
+{
+  "type": "node",
+  "id": 11934607478,
+  "lat": 3.1663889,
+  "lon": 101.6917486,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "3(x) 7kW Type 2 AC\n\nLocated at Level B2, Zone C11",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/168911"
+  }
+},
+{
+  "type": "node",
+  "id": 11934857366,
+  "lat": 3.0260201,
+  "lon": 101.7509655,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "EVGuru",
+    "fee": "yes",
+    "name": "EVGuru",
+    "operator": "EVGuru",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/466193"
+  }
+},
+{
+  "type": "node",
+  "id": 11934911245,
+  "lat": 2.9152446,
+  "lon": 101.6581696,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Tesla Service Centre Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla",
+    "operator:en": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "402358",
+    "short_name": "Tesla",
+    "source": "https://www.tesla.com/findus/location/supercharger/402358",
+    "website": "https://www.tesla.com/findus/location/supercharger/402358"
+  }
+},
+{
+  "type": "node",
+  "id": 11951127590,
+  "lat": 3.1277517,
+  "lon": 101.7246183,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Shell Recharge",
+    "fee": "yes",
+    "name": "Shell Recharge",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/365470"
+  }
+},
+{
+  "type": "node",
+  "id": 11951127591,
+  "lat": 3.1281133,
+  "lon": 101.7220326,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Gentari / JomCharge Network:\n2(x) Type 2 AC (20kW)",
+    "fee": "yes",
+    "name": "Gentari",
+    "name:en": "Gentari",
+    "name:ms": "Gentari",
+    "operator": "Gentari",
+    "operator:wikidata": "Q123457836",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/614740"
+  }
+},
+{
+  "type": "node",
+  "id": 12005122407,
+  "lat": 1.3229666,
+  "lon": 103.8543790,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Charge+",
+    "capacity": "6",
+    "covered": "no",
+    "fee": "yes",
+    "operator": "Charge+"
+  }
+},
+{
+  "type": "node",
+  "id": 12005122415,
+  "lat": 1.3228207,
+  "lon": 103.8532874,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargEco",
+    "capacity": "3",
+    "fee": "yes",
+    "operator": "Seraya YTL"
+  }
+},
+{
+  "type": "node",
+  "id": 12019793139,
+  "lat": 5.3761078,
+  "lon": 100.4057289,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "EVlution",
+    "fee": "yes",
+    "name": "EVlution",
+    "operator": "EVlution",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/602490"
+  }
+},
+{
+  "type": "node",
+  "id": 12073952530,
+  "lat": 1.3873076,
+  "lon": 103.7611319,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "1",
+    "covered": "yes",
+    "fee": "yes",
+    "level": "0"
+  }
+},
+{
+  "type": "node",
+  "id": 12075111082,
+  "lat": 3.0275199,
+  "lon": 101.7530888,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "fee": "yes",
+    "name": "Gentari",
+    "not:operator:wikidata": "Q123457836",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/638866"
+  }
+},
+{
+  "type": "node",
+  "id": 12091963974,
+  "lat": 1.3751391,
+  "lon": 103.7690277,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 12093251000,
+  "lat": 1.3726893,
+  "lon": 103.7631673,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "1",
+    "charge": "SGD 0.72/kWh",
+    "charging_station:output": "7 kW",
+    "covered": "no",
+    "fee": "yes",
+    "operator": "LHN Energy"
+  }
+},
+{
+  "type": "node",
+  "id": 12093421882,
+  "lat": 2.7641531,
+  "lon": 101.8306805,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "fee": "yes",
+    "name": "Shell Recharge",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/312304"
+  }
+},
+{
+  "type": "node",
+  "id": 12093421883,
+  "lat": 2.7636997,
+  "lon": 101.8312290,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Gentari / JomCharge Network:\n2(x) max. 180kW CCS2",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "website": "https://www.plugshare.com/location/312304"
+  }
+},
+{
+  "type": "node",
+  "id": 12093461484,
+  "lat": 2.7568347,
+  "lon": 101.8461598,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "chargEV Network:\n2(x) 50kW CCS2",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/477062"
+  }
+},
+{
+  "type": "node",
+  "id": 12093461485,
+  "lat": 2.7571409,
+  "lon": 101.8455834,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Shell",
+    "fee": "yes",
+    "name": "Shell Recharge",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "source": "https://www.shell.com.my/motorists/shell-recharge/shell-recharge-hpc.html#hpc-locations",
+    "website": "https://www.plugshare.com/location/312303"
+  }
+},
+{
+  "type": "node",
+  "id": 12093477717,
+  "lat": 2.7572489,
+  "lon": 101.8442515,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "description": "Gentari / JomCharge Network:\n2(x) max. 180kW CCS2",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/192763"
+  }
+},
+{
+  "type": "node",
+  "id": 12096199642,
+  "lat": 1.5638802,
+  "lon": 103.7776929,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "EVPower",
+    "fee": "yes",
+    "name": "EVPower",
+    "operator": "EVPower",
+    "payment:app": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/605463"
+  }
+},
+{
+  "type": "node",
+  "id": 12150039409,
+  "lat": 3.1577198,
+  "lon": 101.6498666,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "rydeEV",
+    "capacity": "8",
+    "charging_station:battery_swapping": "yes",
+    "fee": "yes",
+    "moped": "yes",
+    "name": "Oyika Battery Swapping Station",
+    "operator": "Oyika",
+    "website": "https://www.oyika.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 12181443002,
+  "lat": 3.2261216,
+  "lon": 101.6503496,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "6",
+    "fee": "yes",
+    "operator": "Gentari",
+    "operator:wikidata": "Q123457836"
+  }
+},
+{
+  "type": "node",
+  "id": 12187362422,
+  "lat": 1.5907962,
+  "lon": 103.6353344,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "name": "Tesla Supercharger",
+    "operator": "Tesla, Inc.",
+    "operator:wikidata": "Q478214",
+    "short_name": "Tesla",
+    "source": "https://www.tesla.com/findus/location/supercharger/415411\\",
+    "website": "https://www.plugshare.com/location/651242"
+  }
+},
+{
+  "type": "node",
+  "id": 12202866911,
+  "lat": 3.0356408,
+  "lon": 101.7090853,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Carput Zap",
+    "description": "Carput Zap & JomCharge Network:\n2(x) CCS2 DCFC (max 120kWh)",
+    "fee": "yes",
+    "name": "Carput Zap",
+    "operator": "Carput Zap",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/601648"
+  }
+},
+{
+  "type": "node",
+  "id": 12217307751,
+  "lat": 1.5877876,
+  "lon": 103.7593811,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "chargEV Network:\n2(x) CCS2 DCFC (max. 60kWh)",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/643126"
+  }
+},
+{
+  "type": "node",
+  "id": 12238567377,
+  "lat": 1.3193492,
+  "lon": 103.7671144,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 12252901049,
+  "lat": 2.8852818,
+  "lon": 101.6164816,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari Charging Station",
+    "fee": "yes",
+    "name": "Gentari Charging Station",
+    "operator": "Gentari",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/640748"
+  }
+},
+{
+  "type": "node",
+  "id": 12270317495,
+  "lat": 3.0248884,
+  "lon": 101.7511751,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "ChargeSini",
+    "name": "ChargeSini",
+    "operator": "ChargeSini",
+    "website": "https://www.plugshare.com/location/469572"
+  }
+},
+{
+  "type": "node",
+  "id": 12279220588,
+  "lat": 3.1398375,
+  "lon": 101.6960665,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 12300608434,
+  "lat": 2.7658710,
+  "lon": 101.6853896,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Gentari",
+    "fee": "yes",
+    "name": "Gentari",
+    "operator": "Gentari",
+    "operator:wikidata": "Q123457836",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/703607"
+  }
+},
+{
+  "type": "node",
+  "id": 12348097689,
+  "lat": 3.1411667,
+  "lon": 101.6427499,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "fee": "yes",
+    "website": "https://chargev-ygt.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 12470619067,
+  "lat": 1.3803450,
+  "lon": 103.7641373,
+  "tags": {
+    "access": "yes",
+    "addr:floor": "B2",
+    "amenity": "charging_station",
+    "capacity": "2",
+    "charge": "SGD 0.654/kWh",
+    "description": "Lots 118 & 119",
+    "fee": "yes",
+    "indoor": "yes",
+    "level": "-2",
+    "opening_hours": "11:00-23:00",
+    "operator": "Singapore Power"
+  }
+},
+{
+  "type": "node",
+  "id": 12533886460,
+  "lat": 1.3324082,
+  "lon": 103.8959836,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 12533954008,
+  "lat": 3.1347819,
+  "lon": 101.6873764,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "description": "Only for cars from GoEV",
+    "name": "GoEV"
+  }
+},
+{
+  "type": "node",
+  "id": 12628368729,
+  "lat": 1.4360294,
+  "lon": 103.8438830,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 12637515812,
+  "lat": 1.3101872,
+  "lon": 103.8628704,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "2",
+    "operator": "CDG Engie"
+  }
+},
+{
+  "type": "node",
+  "id": 12671964221,
+  "lat": 2.1482655,
+  "lon": 102.6982759,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "2",
+    "charging_station:output": "140 kW",
+    "covered": "yes",
+    "fee": "yes",
+    "name": "Shell Recharge Charging Station",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058",
+    "socket:type2_combo": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 12704408649,
+  "lat": 3.1445925,
+  "lon": 101.7221800,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "brand": "ChargeSINI",
+    "capacity": "3",
+    "fee": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12725133452,
+  "lat": 3.0444087,
+  "lon": 101.5602394,
+  "tags": {
+    "access": "permissive",
+    "amenity": "charging_station",
+    "brand": "Virta Global",
+    "capacity": "2",
+    "fee": "yes",
+    "operator": "Virta",
+    "payment:baywa": "yes",
+    "payment:virta": "yes",
+    "website": "https://www.virta.global/"
+  }
+},
+{
+  "type": "node",
+  "id": 12761938915,
+  "lat": 1.3404025,
+  "lon": 103.7740205,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 12882368669,
+  "lat": 2.2438411,
+  "lon": 102.5316578,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/722417"
+  }
+},
+{
+  "type": "node",
+  "id": 12886492796,
+  "lat": 1.2931093,
+  "lon": 103.8524072,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "2",
+    "covered": "yes",
+    "fee": "no",
+    "level": "-1",
+    "operator": "SMRT"
+  }
+},
+{
+  "type": "node",
+  "id": 12944665013,
+  "lat": 1.3286692,
+  "lon": 103.8443767,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "4",
+    "covered": "no",
+    "fee": "yes",
+    "operator": "Charge+"
+  }
+},
+{
+  "type": "node",
+  "id": 12998834036,
+  "lat": 1.2861812,
+  "lon": 103.8098510,
+  "tags": {
+    "amenity": "charging_station",
+    "name": "Charge+"
+  }
+},
+{
+  "type": "node",
+  "id": 12998834037,
+  "lat": 1.3048604,
+  "lon": 103.8018703,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12998834038,
+  "lat": 1.3342129,
+  "lon": 103.7590939,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 13043130532,
+  "lat": 3.1515177,
+  "lon": 101.6663744,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "DC Handal",
+    "capacity": "4",
+    "fee": "yes",
+    "website": "https://www.dchandal.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 13070146759,
+  "lat": 3.1494857,
+  "lon": 101.7163710,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "2",
+    "fee": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13070146760,
+  "lat": 3.1502256,
+  "lon": 101.7143777,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "2",
+    "fee": "yes",
+    "operator": "Auto Bavaria"
+  }
+},
+{
+  "type": "node",
+  "id": 13142317621,
+  "lat": 2.6785439,
+  "lon": 103.6095983,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "2",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "Petron Tanjung Gemok",
+    "network": "TNB Electron",
+    "operator": "Petron"
+  }
+},
+{
+  "type": "node",
+  "id": 13154843802,
+  "lat": 3.5121776,
+  "lon": 102.4418454,
+  "tags": {
+    "amenity": "charging_station",
+    "name": "Shell R&R Temerloh E8 Eastbound EV Charging",
+    "operator": "ParkEasy"
+  }
+},
+{
+  "type": "node",
+  "id": 13157853701,
+  "lat": 5.4228270,
+  "lon": 100.3230320,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "2",
+    "operator": "ChargeSini"
+  }
+},
+{
+  "type": "node",
+  "id": 13159370651,
+  "lat": 3.1390048,
+  "lon": 101.6960648,
+  "tags": {
+    "amenity": "charging_station",
+    "name": "Charge sini"
+  }
+},
+{
+  "type": "node",
+  "id": 13180105901,
+  "lat": 5.4134094,
+  "lon": 100.3294764,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 13180110601,
+  "lat": 5.4179600,
+  "lon": 100.3237503,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 13182373137,
+  "lat": 1.4159043,
+  "lon": 103.8441274,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "TotalEnergies",
+    "brand:wikidata": "Q154037",
+    "capacity": "30",
+    "name": "TotalEnergies Charging Station",
+    "operator": "TotalEnergies",
+    "operator:wikidata": "Q154037"
+  }
+},
+{
+  "type": "node",
+  "id": 13198096887,
+  "lat": 3.3168190,
+  "lon": 101.5359946,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "4",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "AEON Mall Rawang Rear Entrance",
+    "network": "chargEV",
+    "operator": "Yinson GreenTech Business",
+    "socket:type2_cable": "2",
+    "socket:type2_cable:output": "22 kW",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "240 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13203001285,
+  "lat": 4.2202195,
+  "lon": 100.6707890,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "5",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "AEON Mall Seri Manjung",
+    "name:en": "AEON Mall Seri Manjung",
+    "network": "chargEV",
+    "operator": "Yinson GreenTech Business",
+    "socket:type2_cable": "3",
+    "socket:type2_cable:output": "22 kW",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "240 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13208932339,
+  "lat": 3.1631170,
+  "lon": 101.6522831,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "4",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "Sri Hartamas Nasi Lemak Burung Hantu (DBKL)",
+    "network": "JomCharge",
+    "socket:type2_combo": "4",
+    "socket:type2_combo:output": "70 kW;20 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13235215563,
+  "lat": 3.1421039,
+  "lon": 101.6971497,
+  "tags": {
+    "amenity": "charging_station",
+    "authentication:app": "yes",
+    "capacity": "1",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "no",
+    "name": "Petaling Street Hello Planet & Sasha",
+    "network": "JomChargeDiKL",
+    "operator": "JomCharge",
+    "parking:fee": "yes",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "50 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13247860092,
+  "lat": 5.7041045,
+  "lon": 101.7415537,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "3",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "Petron Batu Melintang",
+    "network": "TNB Electron",
+    "socket:type2_combo": "3",
+    "socket:type2_combo:output": "240 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13249986064,
+  "lat": 3.0685955,
+  "lon": 101.6917816,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 13249992806,
+  "lat": 3.0710267,
+  "lon": 101.6933189,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 13251506205,
+  "lat": 3.1026111,
+  "lon": 101.6825826,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "1",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "Taman Desa Public Bank (DBKL)",
+    "network": "JomChargeDiKL",
+    "operator": "JomCharge",
+    "socket:type2_combo": "1",
+    "socket:type2_combo:output": "50 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13254117996,
+  "lat": 1.2716270,
+  "lon": 103.8376239,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "3",
+    "check_date": "2025-10-19",
+    "fee": "yes",
+    "operator": "Shell",
+    "operator:wikidata": "Q110716465",
+    "socket:type2": "yes",
+    "socket:type2:output": "22kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13288945666,
+  "lat": 1.3217315,
+  "lon": 103.7621732,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Charge+",
+    "capacity": "6",
+    "covered": "no",
+    "fee": "yes",
+    "operator": "Charge+"
+  }
+},
+{
+  "type": "node",
+  "id": 13300963121,
+  "lat": 3.1943249,
+  "lon": 101.6729097,
+  "tags": {
+    "amenity": "charging_station",
+    "operator": "BMW",
+    "operator:wikidata": "Q26678"
+  }
+},
+{
+  "type": "node",
+  "id": 13323947052,
+  "lat": 3.1623497,
+  "lon": 101.6503150,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "3",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "Sri Hartamas Watsons (DBKL)",
+    "network": "JomCharge",
+    "operator": "JomChargeDiKL",
+    "socket:type2_cable": "1",
+    "socket:type2_cable:output": "11 kW",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "100 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601450,
+  "lat": 1.4129431,
+  "lon": 103.8374362,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Shell",
+    "capacity": "8",
+    "name": "Shell Recharge Charging Station"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601451,
+  "lat": 1.4179964,
+  "lon": 103.8325503,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Charge Plus",
+    "capacity": "7",
+    "operator": "Charge+"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601452,
+  "lat": 1.4190922,
+  "lon": 103.8332908,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "8",
+    "name": "Shell Recharge Charging Station",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601453,
+  "lat": 1.4223032,
+  "lon": 103.8323384,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "TotalEnergies",
+    "capacity": "3",
+    "not:brand:wikidata": "Q154037",
+    "operator": "TotalEnergies"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601454,
+  "lat": 1.4237479,
+  "lon": 103.8374011,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "MNL Asia",
+    "capacity": "38",
+    "operator": "MNL Asia"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601455,
+  "lat": 1.4273869,
+  "lon": 103.8361660,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "SP Mobility",
+    "capacity": "100",
+    "operator": "SP Mobility"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601456,
+  "lat": 1.4295350,
+  "lon": 103.8361892,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Chaarge Plus",
+    "capacity": "120",
+    "operator": "Charge+"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601457,
+  "lat": 1.4307854,
+  "lon": 103.8331559,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "SP Mobility",
+    "capacity": "100",
+    "name": "SP Mobility Charging Station",
+    "operator": "Shell",
+    "operator:wikidata": "Q110716465"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601458,
+  "lat": 1.4296588,
+  "lon": 103.8300126,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "SP Mobility",
+    "capacity": "50",
+    "operator": "SP Mobility"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601459,
+  "lat": 1.4181005,
+  "lon": 103.8413768,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "SP Mobility",
+    "capacity": "100",
+    "operator": "SP Mobility"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601460,
+  "lat": 1.4190101,
+  "lon": 103.8422653,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Charge+",
+    "capacity": "7",
+    "operator": "Charge+"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601461,
+  "lat": 1.4204232,
+  "lon": 103.8477620,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Charge+",
+    "capacity": "7",
+    "operator": "Charge+"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601462,
+  "lat": 1.4220788,
+  "lon": 103.8464310,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Shell Recharge",
+    "capacity": "8",
+    "name": "Shell Recharge Charging Station",
+    "not:operator:wikidata": "Q110716465",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601463,
+  "lat": 1.4230244,
+  "lon": 103.8455406,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Charge+",
+    "capacity": "7",
+    "operator": "Charge+"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601464,
+  "lat": 1.4238489,
+  "lon": 103.8386785,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "MNL Asia",
+    "capacity": "38",
+    "operator": "MNL Asia"
+  }
+},
+{
+  "type": "node",
+  "id": 13343601465,
+  "lat": 1.4348960,
+  "lon": 103.8315846,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Shell Recharge Solutions",
+    "capacity": "8",
+    "name": "Shell Recharge Charging Station",
+    "operator": "Shell Recharge Solutions",
+    "operator:wikidata": "Q105883058"
+  }
+},
+{
+  "type": "node",
+  "id": 13395163914,
+  "lat": 3.1308465,
+  "lon": 101.6710324,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "3",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "Bangsar Coffee Stain (DBKL)",
+    "network": "JomCharge",
+    "operator": "JomCharge x DBKL",
+    "socket:type2_cable": "1",
+    "socket:type2_cable:output": "11 kW",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "45 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13408929463,
+  "lat": 4.1809711,
+  "lon": 101.2895210,
+  "tags": {
+    "amenity": "charging_station",
+    "authentication:app": "yes",
+    "capacity": "2",
+    "covered": "yes",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "R&R Tapah Southbound",
+    "network": "ChargEV;JomCharge;Gentari Go",
+    "operator": "ChargEV",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "180 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 13444976601,
+  "lat": 5.4016299,
+  "lon": 100.2764468,
+  "tags": {
+    "amenity": "charging_station",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "60"
+  }
+},
+{
+  "type": "node",
+  "id": 13481037846,
+  "lat": 3.2091405,
+  "lon": 101.6678050,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "brand": "Quick Charge",
+    "capacity": "2",
+    "charge": "1 MYR/kWh",
+    "description": "Only for residents of Lakeville Residence",
+    "fee": "yes",
+    "level": "0",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "Quick Charge 22kW",
+    "operator": "Quick Charge",
+    "payment:app": "yes",
+    "payment:credit_cards": "yes",
+    "socket:type2": "2",
+    "socket:type2:output": "22 kW",
+    "website": "https://quickcharge.my/"
+  }
+},
+{
+  "type": "node",
+  "id": 13481061668,
+  "lat": 3.2091436,
+  "lon": 101.6678508,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "brand": "Quick Charge",
+    "capacity": "2",
+    "charge": "1 MYR/kWh",
+    "description": "Only for residents of Lakeville Residence",
+    "fee": "yes",
+    "level": "0",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "Quick Charge 40kW",
+    "operator": "Quick Charge",
+    "payment:app": "yes",
+    "payment:credit_cards": "yes",
+    "socket:type2": "2",
+    "socket:type2:output": "40 kW",
+    "website": "https://quickcharge.my/"
+  }
+},
+{
+  "type": "node",
+  "id": 13503018274,
+  "lat": 1.3432819,
+  "lon": 103.7757535,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Total Energies Charging Station",
+    "capacity": "4",
+    "name": "Total Energies Electric Vehicle Charging Station",
+    "not:brand:wikidata": "Q154037",
+    "operator": "capstoneEV"
+  }
+},
+{
+  "type": "node",
+  "id": 13503018275,
+  "lat": 1.3468767,
+  "lon": 103.7809078,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "SP Mobility Charging Station",
+    "capacity": "6",
+    "operator": "capstoneEV"
+  }
+},
+{
+  "type": "node",
+  "id": 13503018276,
+  "lat": 1.3442817,
+  "lon": 103.7694954,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "brand": "Volt EV Charging Station",
+    "capacity": "4",
+    "operator": "capstoneEV"
+  }
+},
+{
+  "type": "node",
+  "id": 13503018277,
+  "lat": 1.3520475,
+  "lon": 103.7662811,
+  "tags": {
+    "access": "unknown",
+    "amenity": "charging_station",
+    "brand": "SP Mobility Charging Station",
+    "capacity": "3",
+    "operator": "capstoneEV"
+  }
+},
+{
+  "type": "node",
+  "id": 13503018278,
+  "lat": 1.3474882,
+  "lon": 103.7648945,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Shell Recharge",
+    "capacity": "1",
+    "name": "Shell Recharge Charging Station",
+    "operator": "capstoneEV",
+    "operator:wikidata": "Q105883058"
+  }
+},
+{
+  "type": "node",
+  "id": 13503018279,
+  "lat": 1.3575228,
+  "lon": 103.7631089,
+  "tags": {
+    "access": "unknown",
+    "amenity": "charging_station",
+    "brand": "Charge+ Charging Station",
+    "capacity": "4",
+    "operator": "capstoneEV"
+  }
+},
+{
+  "type": "node",
+  "id": 13503018280,
+  "lat": 1.3654036,
+  "lon": 103.7751155,
+  "tags": {
+    "access": "unknown",
+    "amenity": "charging_station",
+    "brand": "Charge+ Charging Station",
+    "capacity": "2",
+    "operator": "capstoneEV"
+  }
+},
+{
+  "type": "node",
+  "id": 13503018281,
+  "lat": 1.3416661,
+  "lon": 103.7680227,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "brand": "MNL Asia Charging Station",
+    "capacity": "10",
+    "operator": "capstoneEV"
+  }
+},
+{
+  "type": "node",
+  "id": 13526053182,
+  "lat": 3.1413489,
+  "lon": 101.6971434,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 13598424787,
+  "lat": 1.3451307,
+  "lon": 103.7904121,
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "node",
+  "id": 13598424788,
+  "lat": 1.3321268,
+  "lon": 103.7929026,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "brand": "Volt - EV Charging Station",
+    "capacity": "2",
+    "operator": "capstoneEV"
+  }
+},
+{
+  "type": "node",
+  "id": 13598424789,
+  "lat": 1.3302277,
+  "lon": 103.7956701,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "brand": "MNL Charging Station",
+    "capacity": "2",
+    "operator": "capstoneEV"
+  }
+},
+{
+  "type": "node",
+  "id": 13598424790,
+  "lat": 1.3300177,
+  "lon": 103.7991038,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "CDG Engie Charging Station",
+    "capacity": "2",
+    "operator": "capstoneEV"
+  }
+},
+{
+  "type": "node",
+  "id": 13629925065,
+  "lat": 3.0679299,
+  "lon": 101.6939336,
+  "tags": {
+    "amenity": "charging_station",
+    "level": "-1",
+    "name": "Charge Sini"
+  }
+},
+{
+  "type": "node",
+  "id": 13674588928,
+  "lat": 1.3056074,
+  "lon": 103.8625245,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 13688409303,
+  "lat": 5.4366888,
+  "lon": 100.3096130,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name:en": "George Town Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "412720",
+    "website": "https://www.tesla.com/findus/location/supercharger/412720"
+  }
+},
+{
+  "type": "node",
+  "id": 13688409304,
+  "lat": 3.1453951,
+  "lon": 101.6631809,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Damansara Heights Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "402416",
+    "website": "https://www.tesla.com/findus/location/supercharger/402416"
+  }
+},
+{
+  "type": "node",
+  "id": 13688409305,
+  "lat": 3.1488254,
+  "lon": 101.7132488,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name:en": "Pavilion KL Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "404076",
+    "website": "https://www.tesla.com/findus/location/supercharger/404076"
+  }
+},
+{
+  "type": "node",
+  "id": 13688409703,
+  "lat": 3.7982756,
+  "lon": 103.3217034,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name:en": "Kuantan Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "415518",
+    "website": "https://www.tesla.com/findus/location/supercharger/415518"
+  }
+},
+{
+  "type": "node",
+  "id": 13688409705,
+  "lat": 3.0638178,
+  "lon": 101.4837681,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Shah Alam Supercharger",
+    "name:en": "Shah Alam Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "439704",
+    "website": "https://www.tesla.com/findus/location/supercharger/439704"
+  }
+},
+{
+  "type": "node",
+  "id": 13688410501,
+  "lat": 5.3992234,
+  "lon": 100.3987761,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name:en": "Sunway Carnival Mall Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "407763",
+    "website": "https://www.tesla.com/findus/location/supercharger/407763"
+  }
+},
+{
+  "type": "node",
+  "id": 13688410502,
+  "lat": 3.1095851,
+  "lon": 101.6650449,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Bangsar South Supercharger",
+    "name:en": "Bangsar South Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "439515",
+    "website": "https://www.tesla.com/findus/location/supercharger/439515"
+  }
+},
+{
+  "type": "node",
+  "id": 13688411202,
+  "lat": 3.1197621,
+  "lon": 101.6764011,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Kuala Lumpur Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "439894",
+    "website": "https://www.tesla.com/findus/location/supercharger/439894"
+  }
+},
+{
+  "type": "node",
+  "id": 13688412379,
+  "lat": 1.2940152,
+  "lon": 103.8532198,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:wikidata": "Q17089620",
+    "name": "Tesla Supercharger",
+    "operator": "Tesla",
+    "operator:wikidata": "Q478214"
+  }
+},
+{
+  "type": "node",
+  "id": 13688413903,
+  "lat": 1.3522801,
+  "lon": 103.9440542,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name:en": "Tesla Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "singaporecenturysquaresupercharger",
+    "website": "https://www.tesla.com/findus/location/supercharger/singaporecenturysquaresupercharger"
+  }
+},
+{
+  "type": "node",
+  "id": 13688413904,
+  "lat": 1.3035962,
+  "lon": 103.7662920,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name:en": "Tesla Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "singaporewestcoastsupercharger",
+    "website": "https://www.tesla.com/findus/location/supercharger/singaporewestcoastsupercharger"
+  }
+},
+{
+  "type": "node",
+  "id": 13688413905,
+  "lat": 1.3110050,
+  "lon": 103.8566982,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Tesla Supercharger",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name": "Tesla Supercharger",
+    "name:en": "Tesla Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator": "Tesla",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "Citysquaremall",
+    "website": "https://www.tesla.com/findus/location/supercharger/Citysquaremall"
+  }
+},
+{
+  "type": "node",
+  "id": 13688417701,
+  "lat": 1.3345911,
+  "lon": 103.9626488,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand:en": "Tesla Supercharger",
+    "brand:website": "https://www.tesla.com/supercharger",
+    "brand:wikidata": "Q17089620",
+    "fee": "yes",
+    "frequency": "0",
+    "motorcar": "designated",
+    "name:en": "Changi Supercharger",
+    "network:en": "Supercharger",
+    "network:website": "https://www.tesla.com/supercharger",
+    "network:wikidata": "Q17089620",
+    "opening_hours": "24/7",
+    "operator:en": "Tesla",
+    "operator:wikidata": "Q478214",
+    "ref:tesla": "32382",
+    "website": "https://www.tesla.com/findus/location/supercharger/32382"
+  }
+},
+{
+  "type": "node",
+  "id": 13747496175,
+  "lat": 1.5789960,
+  "lon": 103.7498929,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "TNB Electron",
+    "fee": "yes",
+    "operator": "TNB Electron",
+    "payment:app": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "website": "https://www.plugshare.com/location/1799095"
+  }
+},
+{
+  "type": "node",
+  "id": 13749464765,
+  "lat": 3.0492031,
+  "lon": 101.7587287,
+  "tags": {
+    "amenity": "charging_station",
+    "name": "JomCharge",
+    "opening_hours": "24/7",
+    "website": "https://jomcharge.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 13770538121,
+  "lat": 3.1599873,
+  "lon": 101.7165719,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "3",
+    "operator": "DC Handal"
+  }
+},
+{
+  "type": "node",
+  "id": 13823731292,
+  "lat": 3.1464780,
+  "lon": 101.7153736,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Charge +"
+  }
+},
+{
+  "type": "node",
+  "id": 14017380444,
+  "lat": 5.6753743,
+  "lon": 100.5078823,
+  "tags": {
+    "amenity": "charging_station",
+    "bicycle": "no",
+    "brand": "DC Handal Charging Station",
+    "capacity:motorcar": "2",
+    "operator": "DC Handal"
+  }
+},
+{
+  "type": "node",
+  "id": 14100171189,
+  "lat": 3.1547196,
+  "lon": 101.7518257,
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "capacity": "2",
+    "charge": "0.70/kWh",
+    "fee": "no",
+    "name": "EV Charging",
+    "operator": "EVlink",
+    "operator:wikidata": "Q130270938",
+    "payment:app": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14118132320,
+  "lat": 3.2256840,
+  "lon": 101.6504878,
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "2",
+    "operator": "chargeEV"
+  }
+},
+{
+  "type": "node",
+  "id": 14159835023,
+  "lat": 3.0339578,
+  "lon": 101.7655972,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "description": "Fee required: Refer to chargEV app.\nParking fee may apply.",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/2065284"
+  }
+},
+{
+  "type": "node",
+  "id": 14317981613,
+  "lat": 1.9946567,
+  "lon": 103.2958579,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "BHPetrol EV Power",
+    "capacity": "2",
+    "covered": "yes",
+    "opening_hours": "24/7"
+  }
+},
+{
+  "type": "node",
+  "id": 14379525864,
+  "lat": 4.4385081,
+  "lon": 103.4491243,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "Petronas"
+  }
+},
+{
+  "type": "node",
+  "id": 14398175163,
+  "lat": 4.6464976,
+  "lon": 103.3441688,
+  "tags": {
+    "amenity": "charging_station",
+    "brand": "TNB",
+    "operator": "TNB"
+  }
+},
+{
+  "type": "node",
+  "id": 14398339437,
+  "lat": 4.6459222,
+  "lon": 103.3424654,
+  "tags": {
+    "amenity": "charging_station",
+    "operator": "TNB"
+  }
+},
+{
+  "type": "node",
+  "id": 14412622998,
+  "lat": 1.3383935,
+  "lon": 103.7769454,
+  "tags": {
+    "amenity": "charging_station",
+    "operator": "Shell",
+    "operator:wikidata": "Q110716465"
+  }
+},
+{
+  "type": "way",
+  "id": 1189698698,
+  "center": {
+    "lat": 3.1941948,
+    "lon": 101.6729103
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "building": "roof",
+    "capacity": "4",
+    "charge": "1.50 MYR/kWh",
+    "covered": "yes",
+    "description": "Parking rate of RM5 has to be paid as well",
+    "fee": "yes",
+    "operator": "DC Handal",
+    "payment:credit_cards": "yes",
+    "phone": "+60 10 822 6222",
+    "socket:type2_combo": "4",
+    "socket:type2_combo:output": "200kW",
+    "website": "https://www.dchandal.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 1198467958,
+  "center": {
+    "lat": 3.2089176,
+    "lon": 101.6689860
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "ChargeSini Station",
+    "capacity": "4",
+    "description": "ChargeSini Station Lakeville Residence’s Retail Shop Lot Parking.\nRM5 Booking Fee + Charging Fee\n40kW-RM0.80/min\n22kW-RM0.40/min\n11kW-RM0.20/min\n+ Hourly Parking fee",
+    "fee": "yes",
+    "operator": "Charge Sini",
+    "payment:app": "yes",
+    "phone": "+60109089453",
+    "socket:type2_cable": "2",
+    "socket:type2_cable:output": "22kW",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "40kW",
+    "website": "https://www.chargesini.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 1226598073,
+  "center": {
+    "lat": 3.1936028,
+    "lon": 101.6729908
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "2",
+    "covered": "yes",
+    "fee": "yes",
+    "operator": "EvAIMS",
+    "socket:type2_cable": "2",
+    "socket:type2_cable:output": "22kW",
+    "source": "https://www.bamboohillskl.com/events/more-charging-options-at-bamboo-hills"
+  }
+},
+{
+  "type": "way",
+  "id": 1308062027,
+  "center": {
+    "lat": 2.9696657,
+    "lon": 101.6546303
+  },
+  "tags": {
+    "amenity": "charging_station"
+  }
+},
+{
+  "type": "way",
+  "id": 1426656352,
+  "center": {
+    "lat": 1.3085380,
+    "lon": 103.9123687
+  },
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "4"
+  }
+},
+{
+  "type": "way",
+  "id": 1435941411,
+  "center": {
+    "lat": 3.3161344,
+    "lon": 101.5367643
+  },
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "3",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "AEON Mall Rawang Main Entrance",
+    "network": "chargEV",
+    "operator": "Yinson GreenTech Business",
+    "socket:type2_cable": "1",
+    "socket:type2_cable:output": "22 kW",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "60 kW"
+  }
+},
+{
+  "type": "way",
+  "id": 1461872743,
+  "center": {
+    "lat": 4.5896477,
+    "lon": 101.0712227
+  },
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "4",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "Wisma TNB Jalan Lahat, Ipoh",
+    "network": "TNB Electron",
+    "operator": "TNB",
+    "socket:type2_combo": "4",
+    "socket:type2_combo:output": "240 kW"
+  }
+},
+{
+  "type": "way",
+  "id": 1465119896,
+  "center": {
+    "lat": 3.1744686,
+    "lon": 101.6606652
+  },
+  "tags": {
+    "amenity": "charging_station",
+    "capacity": "4",
+    "fee": "yes",
+    "motorcar": "yes",
+    "motorcycle": "yes",
+    "name": "Mont Kiara Only 1 Kopitiam",
+    "network": "JomChargeDiKL",
+    "operator": "JomCharge",
+    "socket:type2": "1",
+    "socket:type2:output": "11 kW",
+    "socket:type2_combo": "3",
+    "socket:type2_combo:output": "80 kW;20 kW"
+  }
+},
+{
+  "type": "way",
+  "id": 1526702276,
+  "center": {
+    "lat": 5.2420883,
+    "lon": 100.4392353
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Time Charge N Go",
+    "capacity": "2",
+    "socket:type2_cable": "2",
+    "website": "https://www.plugshare.com/location/938294"
+  }
+},
+{
+  "type": "way",
+  "id": 1526702279,
+  "center": {
+    "lat": 5.2349857,
+    "lon": 100.4424463
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "TNB Electron",
+    "capacity": "2",
+    "frequency": "0",
+    "socket:type2_combo": "2",
+    "website": "https://www.plugshare.com/location/1811161"
+  }
+},
+{
+  "type": "way",
+  "id": 1531210498,
+  "center": {
+    "lat": 5.2363390,
+    "lon": 100.4439761
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "chargEV",
+    "capacity": "2",
+    "covered": "no",
+    "fee": "yes",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "website": "https://www.plugshare.com/location/468888"
+  }
+},
+{
+  "type": "way",
+  "id": 1531211483,
+  "center": {
+    "lat": 5.2377949,
+    "lon": 100.4450193
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "2",
+    "name": "chargEV",
+    "operator": "chargEV",
+    "payment:app": "yes",
+    "payment:mobile_app": "yes",
+    "socket:type2_cable": "2",
+    "website": "https://www.plugshare.com/location/1725782"
+  }
+},
+{
+  "type": "way",
+  "id": 1532956004,
+  "center": {
+    "lat": 5.2413745,
+    "lon": 100.4386808
+  },
+  "tags": {
+    "access": "private",
+    "amenity": "charging_station",
+    "brand": "Time Charge N Go",
+    "capacity": "3",
+    "charge": "1.00 MYR/1 kWh",
+    "charge:conditional": "0.20 MYR/minute @ (state == 100)",
+    "fee": "yes",
+    "socket:type2_cable": "3",
+    "socket:type2_cable:output": "22 kW"
+  }
+},
+{
+  "type": "way",
+  "id": 1533464963,
+  "center": {
+    "lat": 4.1790099,
+    "lon": 101.2911891
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "Shell Recharge",
+    "capacity": "2",
+    "covered": "yes",
+    "fee": "yes",
+    "name": "Shell Recharge",
+    "network": "Shell Recharge",
+    "socket:type2_combo": "2",
+    "socket:type2_combo:output": "180 kW"
+  }
+},
+{
+  "type": "way",
+  "id": 1535145379,
+  "center": {
+    "lat": 4.1787339,
+    "lon": 101.2899070
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "TNB Electron",
+    "capacity": "2",
+    "covered": "yes",
+    "fee": "yes",
+    "name": "TNB Electron",
+    "socket:type2_combo": "2"
+  }
+},
+{
+  "type": "way",
+  "id": 1560042978,
+  "center": {
+    "lat": 3.2365767,
+    "lon": 101.4277610
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "brand": "JomCharge",
+    "capacity": "2",
+    "charge": "1.4",
+    "fee": "yes",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:jomcharge": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1568366316,
+  "center": {
+    "lat": 2.0211870,
+    "lon": 103.3102197
+  },
+  "tags": {
+    "amenity": "charging_station",
+    "authentication:app": "yes",
+    "brand": "JomCharge",
+    "capacity": "1",
+    "covered": "yes",
+    "fee": "yes",
+    "motorcar": "yes",
+    "opening_hours": "24/7",
+    "payment:app": "yes",
+    "socket:chademo": "1",
+    "socket:type2": "1",
+    "socket:type2_combo": "1",
+    "truck": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1568692834,
+  "center": {
+    "lat": 2.0029401,
+    "lon": 103.2912936
+  },
+  "tags": {
+    "amenity": "charging_station",
+    "authentication:app": "yes",
+    "brand": "ChargeSini",
+    "capacity": "2",
+    "covered": "no",
+    "email": "support@chargesini.com",
+    "fee": "yes",
+    "motorcar": "yes",
+    "opening_hours": "24/7",
+    "payment:cash": "no",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+60 11-1638 1880",
+    "socket:type2": "2",
+    "website": "https://www.chargesini.com/"
+  }
+},
+{
+  "type": "way",
+  "id": 1575192706,
+  "center": {
+    "lat": 5.9825757,
+    "lon": 116.5796771
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "2",
+    "charge": "RM1.5/kW",
+    "fee": "yes",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "plugtype": "DC"
+  }
+},
+{
+  "type": "way",
+  "id": 1575192707,
+  "center": {
+    "lat": 5.9823727,
+    "lon": 116.5792220
+  },
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "capacity": "2",
+    "charge": "RM1.05/kW",
+    "fee": "yes",
+    "operator": "JomCharge",
+    "payment:app": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "plugtype": "AC"
+  }
+}
+
+  ]
+}

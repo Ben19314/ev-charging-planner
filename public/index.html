@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EV Charging Planner</title>
+<meta name="description" content="Find EV chargers and prices along your route in Malaysia">
+<meta name="theme-color" content="#0f8a5f">
+<!-- iPhone: "Add to Home Screen" opens full-screen like an app, with this icon and name -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="EV Charge">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="prices.js"></script>
+<style>
+  :root {
+    --bg: #f4f6f8; --panel: #ffffff; --text: #16202a; --muted: #5d6b78; --line: #dde3e9;
+    --accent: #0f8a5f; --accent-ink: #ffffff; --accent-soft: #e3f4ec; --danger: #b42318;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body { font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); }
+  .app { display: grid; grid-template-columns: 400px 1fr; height: 100vh; }
+  aside { background: var(--panel); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; }
+  header { padding: 16px 16px 10px; }
+  h1 { font-size: 19px; margin: 0; display: flex; align-items: center; gap: 8px; }
+  h1 .bolt { color: var(--accent); }
+  .sub { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  form { padding: 0 16px 12px; display: grid; gap: 8px; }
+  label { font-size: 12px; color: var(--muted); font-weight: 600; }
+  .field { display: flex; gap: 6px; }
+  input[type=text], input[type=password], select {
+    width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; font: inherit; background: #fff; color: var(--text);
+  }
+  input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  button { font: inherit; cursor: pointer; border-radius: 10px; border: 1px solid var(--line); background: #fff; color: var(--text); padding: 9px 12px; }
+  button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 700; padding: 12px; font-size: 16px; }
+  button.primary:disabled { opacity: .6; cursor: wait; }
+  .icon-btn { flex: 0 0 auto; white-space: nowrap; }
+  .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 16px 10px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; font-size: 13px; background: #fff; user-select: none; cursor: pointer; }
+  .chip.off { opacity: .4; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex: 0 0 auto; }
+  .toolbar { display: flex; gap: 8px; padding: 0 16px 10px; flex-wrap: wrap; align-items: center; font-size: 13px; }
+  .toolbar label { font-weight: 500; color: var(--text); font-size: 13px; display: inline-flex; align-items: center; gap: 4px; }
+  .status { padding: 8px 16px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
+  .status.err { color: var(--danger); }
+  .gm-row { padding: 0 16px 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .gm-row a { flex: 1; text-align: center; text-decoration: none; font-size: 13px; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line); color: var(--text); background: #fff; }
+  .gm-row a.hidden { display: none; }
+  ul.list { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; border-top: 1px solid var(--line); }
+  .item { padding: 10px 16px; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 12px 1fr auto; gap: 10px; cursor: pointer; }
+  .item:hover, .item.sel { background: var(--accent-soft); }
+  .item .dot { margin-top: 5px; }
+  .item .name { font-weight: 600; }
+  .item .meta { font-size: 12px; color: var(--muted); }
+  .item .km { font-size: 12px; color: var(--muted); text-align: right; white-space: nowrap; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 6px; background: #eef1f4; margin-right: 4px; }
+  .tag.dc { background: #fff1d6; color: #8a5300; }
+  .price { font-size: 13px; margin-top: 2px; }
+  .price b { color: var(--accent); }
+  .price .est { color: var(--muted); }
+  .price .unk { color: var(--muted); font-style: italic; }
+  .price-note { padding: 0 16px 10px; font-size: 12px; color: var(--muted); }
+  .trip-check { margin: 0 16px 10px; font-size: 13px; border-radius: 10px; padding: 8px 12px; display: none; }
+  .trip-check.ok { display: block; background: var(--accent-soft); color: #0b5e41; }
+  .trip-check.warn { display: block; background: #fff1d6; color: #7a4a00; }
+  .data-info { padding: 0 16px 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--muted); }
+  .data-info button { font-size: 12px; padding: 5px 10px; flex: 0 0 auto; }
+  .data-info button:disabled { opacity: .6; cursor: wait; }
+  .homes { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .homes button { font-size: 12px; padding: 5px 10px; border-radius: 999px; background: var(--accent-soft); border-color: #bfe3d1; color: #0b5e41; font-weight: 600; }
+  .homes button:hover { background: #cdebdc; }
+  .homes button.edit-places { background: #fff; border-color: var(--line); color: var(--muted); font-weight: 500; }
+  .item .acts { grid-column: 2 / 4; display: flex; gap: 6px; margin-top: 4px; }
+  .item .acts a, .item .acts button { font-size: 12px; padding: 4px 8px; border-radius: 8px; text-decoration: none; border: 1px solid var(--line); color: var(--text); background: #fff; }
+  .item .acts .stop.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+  #map { height: 100%; width: 100%; }
+  details.settings { padding: 0 16px 10px; font-size: 13px; }
+  details.settings summary { cursor: pointer; color: var(--muted); }
+  details.settings .inner { display: grid; gap: 8px; margin-top: 8px; }
+  details.settings a { color: var(--accent); }
+  .empty { padding: 20px 16px; color: var(--muted); font-size: 14px; }
+  .pin { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.35); }
+  .pin.dc { width: 18px; height: 18px; }
+  .endpoint { background: #16202a; color: #fff; font-weight: 700; font-size: 12px; border-radius: 8px; padding: 2px 6px; white-space: nowrap; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+  @media (max-width: 800px) {
+    .app { grid-template-columns: 1fr; grid-template-rows: auto 45vh; height: auto; }
+    aside { border-right: 0; order: 1; }
+    #mapwrap { order: 0; height: 45vh; position: sticky; top: 0; z-index: 1; }
+    ul.list { max-height: none; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside>
+    <header>
+      <h1><span class="bolt">⚡</span> EV Charging Planner</h1>
+      <div class="sub">Find chargers on your route across Malaysia — JomCharge, ChargEV, Gentari, Shell, TNB Electron &amp; more</div>
+    </header>
+
+    <form id="tripForm" autocomplete="off">
+      <div>
+        <label for="from">From (leave empty to search only around the destination)</label>
+        <div class="field">
+          <input id="from" type="text" placeholder="e.g. Mid Valley, Kuala Lumpur">
+          <button type="button" class="icon-btn" id="myLoc" title="Use my current location">📍 Me</button>
+        </div>
+        <div class="homes" data-for="from"></div>
+      </div>
+      <div>
+        <label for="to">Destination</label>
+        <input id="to" type="text" placeholder="e.g. Gurney Plaza, Penang" required>
+        <div class="homes" data-for="to"></div>
+      </div>
+      <button class="primary" id="goBtn" type="submit">🔍 Find chargers</button>
+    </form>
+
+    <div class="toolbar">
+      <label>Within
+        <select id="corridor" style="width:auto;padding:4px 6px">
+          <option value="2">2 km</option>
+          <option value="5">5 km</option>
+          <option value="10" selected>10 km</option>
+          <option value="20">20 km</option>
+        </select>
+        of route
+      </label>
+      <label><input type="checkbox" id="dcOnly"> DC fast only</label>
+      <label>Cost for
+        <input id="kwh" type="number" min="1" max="200" value="30" style="width:56px;padding:4px 6px;border:1px solid var(--line);border-radius:8px;font:inherit">
+        kWh
+      </label>
+      <label>Car range
+        <input id="range" type="number" min="50" max="1000" step="10" value="300" style="width:64px;padding:4px 6px;border:1px solid var(--line);border-radius:8px;font:inherit">
+        km
+      </label>
+      <label>Sort
+        <select id="sort" style="width:auto;padding:4px 6px">
+          <option value="route">Route order</option>
+          <option value="price">Cheapest first</option>
+        </select>
+      </label>
+    </div>
+    <div class="price-note" id="priceNote"></div>
+    <div class="trip-check" id="tripCheck"></div>
+
+    <div class="chips" id="chips"></div>
+
+    <div class="gm-row">
+      <a id="gmTrip" class="hidden" target="_blank" rel="noopener">🗺️ Open trip in Google Maps</a>
+      <a id="gmNear" class="hidden" target="_blank" rel="noopener">🔌 Google's chargers near destination</a>
+    </div>
+
+    <div class="data-info">
+      <span id="dataInfo">Charger list: checking…</span>
+      <button type="button" id="updateNow" title="Download the latest charger list now">🔄 Update now</button>
+    </div>
+
+    <details class="settings">
+      <summary>Settings &amp; data source</summary>
+      <div class="inner">
+        <label for="source">Charger data</label>
+        <select id="source">
+          <option value="auto">Auto (both lists combined if key set, else OpenStreetMap)</option>
+          <option value="ocm">Open Charge Map (best brand coverage)</option>
+          <option value="osm">OpenStreetMap (no key needed)</option>
+        </select>
+        <label for="ocmKey">Open Charge Map key (free)</label>
+        <input id="ocmKey" type="password" placeholder="Paste your free key here">
+        <div class="sub">Get one free at <a href="https://openchargemap.org/site/loginprovider/beginlogin" target="_blank" rel="noopener">openchargemap.org</a> → sign in → My Profile → My Apps → Register an application. Saved only in this browser.</div>
+      </div>
+    </details>
+
+    <div class="status" id="status">Enter a destination and press Find chargers.</div>
+    <ul class="list" id="list"></ul>
+  </aside>
+  <div id="mapwrap"><div id="map"></div></div>
+</div>
+
+<script>
+// ───────────────────────── Brands ─────────────────────────
+const BRANDS = [
+  { id: 'jomcharge', name: 'JomCharge',      color: '#00a651', re: /jom\s*charge/i },
+  { id: 'chargev',   name: 'ChargEV',        color: '#0072bc', re: /charg\s*ev\b|chargev|greentech|green tech|mgtc|yinson/i },
+  { id: 'gentari',   name: 'Gentari',        color: '#00a3a1', re: /gentari|petronas/i },
+  { id: 'shell',     name: 'Shell Recharge', color: '#d9a400', re: /shell/i },
+  { id: 'tnb',       name: 'TNB Electron',   color: '#7a3db8', re: /\btnb\b|electron|tenaga/i },
+  { id: 'tesla',     name: 'Tesla',          color: '#cc0000', re: /tesla/i },
+  { id: 'dchandal',  name: 'DC Handal',      color: '#ff6a00', re: /dc\s*handal/i },
+  { id: 'chargesini',name: 'ChargeSini',     color: '#e6007e', re: /charge\s*sini/i },
+  { id: 'evconn',    name: 'EV Connection',  color: '#2b3a4a', re: /ev\s*connection/i },
+  { id: 'chargeplus',name: 'Charge+',        color: '#1fa0d8', re: /charge\s*\+|charge\s*plus/i },
+  { id: 'capstone',  name: 'capstoneEV',     color: '#5b8c00', re: /capstone/i },
+  { id: 'total',     name: 'TotalEnergies',  color: '#ee2a24', re: /total\s*energies/i },
+  { id: 'carbrand',  name: 'Car dealers',    color: '#8c6d3f', re: /\b(bmw|auto bavaria|mercedes|porsche|volvo|byd|hyundai|kia|mini|audi|proton|perodua|ora|gwm|mg motor|zeekr|smart|lexus|toyota|nissan)\b/i },
+  { id: 'other',     name: 'Other',          color: '#64748b', re: null },
+];
+function brandOf(...texts) {
+  const s = texts.filter(Boolean).join(' | ');
+  return BRANDS.find(b => b.re && b.re.test(s)) || BRANDS[BRANDS.length - 1];
+}
+
+// ───────────────────────── State ─────────────────────────
+const $ = id => document.getElementById(id);
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('evp.' + k); return v === null ? d : v; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('evp.' + k, v); } catch {} },
+};
+const state = { from: null, to: null, route: null, chargers: [], hidden: new Set(), stops: new Set(), myLoc: null };
+
+$('ocmKey').value = store.get('ocmKey', '');
+$('source').value = store.get('source', 'auto');
+$('corridor').value = store.get('corridor2', '10');
+$('dcOnly').checked = store.get('dcOnly', '0') === '1';
+$('to').value = store.get('lastTo', '');
+$('from').value = store.get('lastFrom', '');
+$('ocmKey').addEventListener('change', e => store.set('ocmKey', e.target.value.trim()));
+$('source').addEventListener('change', e => store.set('source', e.target.value));
+$('corridor').addEventListener('change', e => { store.set('corridor2', e.target.value); if (state.to) run(); });
+$('dcOnly').addEventListener('change', e => { store.set('dcOnly', e.target.checked ? '1' : '0'); render(); });
+$('kwh').value = store.get('kwh', '30');
+$('sort').value = store.get('sort', 'route');
+$('kwh').addEventListener('input', e => { store.set('kwh', e.target.value); render(); });
+$('sort').addEventListener('change', e => { store.set('sort', e.target.value); render(); });
+$('range').value = store.get('range', '300');
+$('range').addEventListener('input', e => { store.set('range', e.target.value); render(); });
+
+// Longest stretch of the trip with no charger (start → charger → … → destination).
+function longestGap(list) {
+  if (!state.route) return null;
+  const marks = [0, ...list.map(c => c.along).sort((a, b) => a - b), state.route.km];
+  let best = { km: 0, from: 0, to: 0 };
+  for (let i = 1; i < marks.length; i++) {
+    const d = marks[i] - marks[i - 1];
+    if (d > best.km) best = { km: d, from: marks[i - 1], to: marks[i] };
+  }
+  return best;
+}
+function renderTripCheck() {
+  const box = $('tripCheck');
+  if (!state.route || !state.chargers.length) { box.className = 'trip-check'; return; }
+  const all = longestGap(state.chargers);
+  const fast = longestGap(state.chargers.filter(c => c.dc));
+  const range = +$('range').value || 0;
+  const safe = range * 0.8; // keep a 20% buffer
+  const nDc = state.chargers.filter(c => c.dc).length;
+  const lines = [
+    `Longest stretch with no charger: <b>${all.km.toFixed(0)} km</b> (km ${all.from.toFixed(0)}–${all.to.toFixed(0)})`,
+    nDc ? `Longest stretch with no DC fast charger: <b>${fast.km.toFixed(0)} km</b> (km ${fast.from.toFixed(0)}–${fast.to.toFixed(0)})` : 'No DC fast chargers found near this route.',
+  ];
+  const tight = range && all.km > safe;
+  lines.unshift(tight
+    ? `⚠️ Plan a charge before km ${all.from.toFixed(0)} — the next ${all.km.toFixed(0)} km has no charger, more than 80% of your ${range} km range.`
+    : `✅ With ${range} km range you're never more than ${all.km.toFixed(0)} km from a charger on this trip.`);
+  box.innerHTML = lines.join('<br>');
+  box.className = 'trip-check ' + (tight ? 'warn' : 'ok');
+}
+$('priceNote').textContent = `💰 Prices are typical brand rates (${PRICES_UPDATED}) — confirm in the charger's app. ${IDLE_FEE_NOTE}`;
+
+// ───────────────────────── Prices ─────────────────────────
+const rm = n => 'RM' + n.toFixed(2);
+const rangeText = r => r[1] === 0 ? 'Free' : (r[0] === r[1] ? rm(r[0]) : `${rm(r[0])}–${r[1].toFixed(2)}`);
+// Station's own price (from map data) wins; otherwise the brand's typical price.
+function priceFor(c) {
+  if (c.free) return { text: 'Free', low: 0, high: 0, note: 'Listed as free', own: true };
+  if (c.charge) {
+    const nums = (c.charge.match(/\d+(?:\.\d+)?/g) || []).map(Number).filter(n => n > 0 && n < 10);
+    const perKwh = /kwh/i.test(c.charge) && nums.length;
+    return { text: c.charge, low: perKwh ? Math.min(...nums) : null, high: perKwh ? Math.max(...nums) : null, note: 'Price listed for this station', own: true };
+  }
+  const p = PRICES[c.brand.id];
+  if (p) {
+    const r = (c.dc ? p.dc : p.ac) || p.dc || p.ac;
+    if (r) {
+      const kind = (c.dc ? p.dc : p.ac) ? (c.dc ? 'DC' : 'AC') : (p.dc ? 'DC' : 'AC');
+      return { text: `${rangeText(r)}${r[1] ? '/kWh' : ''} ${kind}`, low: r[0], high: r[1], note: p.note };
+    }
+  }
+  // Brand doesn't publish a price: show the typical Malaysian range, marked as an estimate.
+  const r = c.dc ? TYPICAL.dc : TYPICAL.ac;
+  const who = c.brand.id === 'other' ? (c.operator || 'operator') : c.brand.name;
+  return { text: `est. ${rangeText(r)}/kWh ${c.dc ? 'DC' : 'AC'}`, low: r[0], high: r[1], note: `Typical Malaysian price — ${who} doesn't publish rates, check their app`, estimate: true };
+}
+function costText(pr) {
+  const kwh = +$('kwh').value;
+  if (!pr || pr.low == null || !(kwh > 0)) return '';
+  if (pr.high === 0) return '';
+  const a = pr.low * kwh, b = pr.high * kwh;
+  return `≈ ${Math.round(a) === Math.round(b) ? 'RM' + Math.round(a) : `RM${Math.round(a)}–${Math.round(b)}`} for ${kwh} kWh`;
+}
+function priceHTML(c) {
+  const pr = priceFor(c);
+  const cost = costText(pr);
+  const head = pr.estimate ? `<span class="unk">${esc(pr.text)}</span>` : `<b>${esc(pr.text)}</b>`;
+  return `<div class="price" title="${esc(pr.note || '')}">💰 ${head}${cost ? ` <span class="est">· ${cost}</span>` : ''}${pr.note ? `<br><span class="est">${esc(pr.note)}</span>` : ''}</div>`;
+}
+
+// ───────────────────────── Map ─────────────────────────
+const map = L.map('map', { zoomControl: true }).setView([3.6, 102.0], 7);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19, attribution: '&copy; OpenStreetMap contributors | Chargers: Open Charge Map / OpenStreetMap',
+}).addTo(map);
+const layer = L.layerGroup().addTo(map);
+const routeLayer = L.layerGroup().addTo(map);
+const markers = new Map();
+
+// ───────────────────────── Helpers ─────────────────────────
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+function setStatus(msg, err) { const el = $('status'); el.textContent = msg; el.classList.toggle('err', !!err); }
+function hav(a, b) {
+  const R = 6371, toR = x => x * Math.PI / 180;
+  const dLat = toR(b[0] - a[0]), dLon = toR(b[1] - a[1]);
+  const s = Math.sin(dLat / 2) ** 2 + Math.cos(toR(a[0])) * Math.cos(toR(b[0])) * Math.sin(dLon / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(s));
+}
+async function fetchJSON(url, opts = {}, timeoutMs = 30000) {
+  const ctl = new AbortController();
+  const t = setTimeout(() => ctl.abort(), timeoutMs);
+  try {
+    const r = await fetch(url, { ...opts, signal: ctl.signal });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    return await r.json();
+  } finally { clearTimeout(t); }
+}
+const ll = p => `${p[0].toFixed(6)},${p[1].toFixed(6)}`;
+
+// ───────────────────────── Saved places (HOME buttons) ─────────────────────────
+// Kept only on this device (browser storage) — never in the code or on the website.
+// Each place: { label, address, latlng }. latlng is the street location (the map often
+// doesn't know house numbers); Google Maps links use the full address for exact navigation.
+let PLACES = [];
+try { PLACES = JSON.parse(localStorage.getItem('evp.places') || '[]'); } catch {}
+function savePlaces() {
+  try { localStorage.setItem('evp.places', JSON.stringify(PLACES)); } catch {}
+  renderPlaces();
+}
+// One-tap setup link: …#places=<code>. Read once, saved on this device, then removed from the address bar.
+(function importPlacesFromLink() {
+  const m = location.hash.match(/places=([^&]+)/);
+  if (!m) return;
+  try {
+    const list = JSON.parse(decodeURIComponent(escape(atob(decodeURIComponent(m[1])))));
+    if (Array.isArray(list)) {
+      PLACES = list.filter(p => p && p.label && p.address && Array.isArray(p.latlng));
+      savePlaces();
+      setTimeout(() => setStatus(`🏠 ${PLACES.length} saved places added to this device.`), 0);
+    }
+  } catch {}
+  history.replaceState(null, '', location.pathname + location.search);
+})();
+const placeByAddress = a => PLACES.find(h => h.address.toLowerCase() === String(a).trim().toLowerCase());
+
+function renderPlaces() {
+  document.querySelectorAll('.homes').forEach(box => {
+    box.innerHTML = PLACES.map((h, i) => `<button type="button" data-home="${i}" title="${esc(h.address)}">🏠 ${esc(h.label)}</button>`).join('')
+      + (box.dataset.for === 'from' ? `<button type="button" class="edit-places" data-edit="1">${PLACES.length ? '✏️ Edit places' : '+ Save a place'}</button>` : '');
+  });
+}
+document.querySelectorAll('.homes').forEach(box => box.addEventListener('click', e => {
+  if (e.target.closest('[data-edit]')) return editPlaces();
+  const b = e.target.closest('[data-home]'); if (!b) return;
+  const input = $(box.dataset.for);
+  input.value = PLACES[+b.dataset.home].address;
+  if (box.dataset.for === 'from') state.myLoc = null;
+  input.dispatchEvent(new Event('input'));
+}));
+
+// Malaysian address short forms the map search doesn't understand
+const expandAbbr = s => s.replace(/\bLrg\b\.?/gi, 'Lorong').replace(/\bJln\b\.?/gi, 'Jalan').replace(/\bTmn\b\.?/gi, 'Taman').replace(/\bKg\b\.?/gi, 'Kampung');
+async function nominatim(q) {
+  const res = await fetchJSON('https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=my,sg&q=' + encodeURIComponent(q), { headers: { 'Accept-Language': 'en' } }, 20000);
+  return res.length ? { latlng: [+res[0].lat, +res[0].lon], name: res[0].display_name } : null;
+}
+// The map often doesn't know house numbers or small taman names, so try simpler
+// versions of the address: full → without house number → street + town → taman + town.
+async function findAddress(address) {
+  const full = expandAbbr(address);
+  const parts = full.split(',').map(s => s.trim()).filter(s => s && !/^\d+[A-Za-z]?$/.test(s));
+  if (!parts.length) throw new Error('not found');
+  parts[0] = parts[0].replace(/^\d+[A-Za-z]?\s+/, '');                              // drop the house number
+  const street = parts.find(p => /\b(lorong|jalan|persiaran|lebuh|lebuhraya)\b/i.test(p)) || parts[0];
+  const taman = parts.find(p => /\b(taman|kampung|bandar|desa)\b/i.test(p));
+  const townPart = parts.find(p => /\b\d{5}\b/.test(p)) || parts[parts.length - 2] || parts[parts.length - 1];
+  const town = townPart.replace(/\b\d{5}\b/g, '').trim();
+  const tries = [...new Set([full, parts.join(', '), `${street}, ${town}`, taman && `${taman}, ${town}`, town].filter(Boolean))];
+  for (let i = 0; i < tries.length; i++) {
+    if (i) await new Promise(r => setTimeout(r, 1100));                              // map service allows ~1 search/second
+    try { const r = await nominatim(tries[i]); if (r) return r.latlng; } catch {}
+  }
+  throw new Error('not found');
+}
+async function editPlaces() {
+  const list = PLACES.map((p, i) => `${i + 1}. ${p.label}`).join('\n');
+  const choice = prompt((PLACES.length ? `Saved places:\n${list}\n\nType a NUMBER to delete that place,\nor type a NAME to add a new place:` : 'Name for this place (e.g. HOME):'));
+  if (!choice || !choice.trim()) return;
+  const n = Number(choice.trim());
+  if (Number.isInteger(n) && PLACES[n - 1]) {
+    if (confirm(`Delete "${PLACES[n - 1].label}" from this device?`)) { PLACES.splice(n - 1, 1); savePlaces(); }
+    return;
+  }
+  const label = choice.trim().toUpperCase();
+  const address = prompt(`Full address for "${label}":`);
+  if (!address || !address.trim()) return;
+  setStatus('Finding that address on the map…');
+  try {
+    const latlng = await findAddress(address);
+    PLACES.push({ label, address: address.trim(), latlng });
+    savePlaces();
+    setStatus(`🏠 Saved "${label}" on this device.`);
+  } catch {
+    setStatus('⚠️ Could not find that address on the map. Try adding the town and state.', true);
+  }
+}
+renderPlaces();
+
+// ───────────────────────── Geocode ─────────────────────────
+const COORD_RE = /^\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*$/;
+async function geocode(q) {
+  const home = placeByAddress(q);
+  if (home) return { latlng: home.latlng, name: home.label, address: home.address };
+  if (q === '📍 My location') {
+    if (state.myLoc) return { latlng: state.myLoc, name: 'My location' };
+    throw new Error('Press 📍 Me again to get your location, or type your start place.');
+  }
+  const m = q.match(COORD_RE);
+  if (m) return { latlng: [+m[1], +m[2]], name: q.trim() };
+  const url = 'https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=my,sg&q=' + encodeURIComponent(q);
+  const res = await fetchJSON(url, { headers: { 'Accept-Language': 'en' } }, 20000);
+  if (!res.length) throw new Error(`Couldn't find "${q}". Try adding the city, e.g. "${q}, Kuala Lumpur".`);
+  return { latlng: [+res[0].lat, +res[0].lon], name: res[0].display_name.split(',').slice(0, 3).join(',') };
+}
+
+// ───────────────────────── Route ─────────────────────────
+async function getRoute(a, b) {
+  const url = `https://router.project-osrm.org/route/v1/driving/${a[1]},${a[0]};${b[1]},${b[0]}?overview=full&geometries=geojson`;
+  const res = await fetchJSON(url, {}, 30000);
+  if (!res.routes || !res.routes.length) throw new Error('No driving route found between those places.');
+  const r = res.routes[0];
+  const pts = r.geometry.coordinates.map(c => [c[1], c[0]]);
+  const cum = [0];
+  for (let i = 1; i < pts.length; i++) cum.push(cum[i - 1] + hav(pts[i - 1], pts[i]));
+  return { pts, cum, km: r.distance / 1000, min: r.duration / 60 };
+}
+// Keep a point roughly every `stepKm` along the line (for queries)
+function thin(pts, stepKm) {
+  const out = [pts[0]]; let acc = 0;
+  for (let i = 1; i < pts.length; i++) { acc += hav(pts[i - 1], pts[i]); if (acc >= stepKm) { out.push(pts[i]); acc = 0; } }
+  if (out[out.length - 1] !== pts[pts.length - 1]) out.push(pts[pts.length - 1]);
+  return out;
+}
+
+// ───────────────────────── Charger data ─────────────────────────
+function bboxOf(pts, padKm) {
+  let s = 90, w = 180, n = -90, e = -180;
+  for (const [la, lo] of pts) { s = Math.min(s, la); n = Math.max(n, la); w = Math.min(w, lo); e = Math.max(e, lo); }
+  const d = padKm / 111;
+  return { s: s - d, w: w - d, n: n + d, e: e + d };
+}
+
+async function fromOCM(pts, padKm, key) {
+  const b = bboxOf(pts, padKm);
+  const url = `https://api.openchargemap.io/v3/poi/?output=json&maxresults=3000&compact=true&verbose=false&key=${encodeURIComponent(key)}`
+            + `&boundingbox=(${b.s},${b.w}),(${b.n},${b.e})`;
+  const data = await fetchJSON(url, {}, 40000);
+  return data.map(p => {
+    const a = p.AddressInfo || {};
+    const conns = p.Connections || [];
+    const maxKw = Math.max(0, ...conns.map(c => c.PowerKW || 0));
+    const dc = conns.some(c => (c.CurrentTypeID === 30) || (c.Level && c.Level.IsFastChargeCapable) || (c.PowerKW || 0) >= 25);
+    const op = (p.OperatorInfo && p.OperatorInfo.Title) || '';
+    const types = [...new Set(conns.map(c => c.ConnectionType && c.ConnectionType.Title).filter(Boolean))];
+    return {
+      id: 'ocm' + p.ID, lat: a.Latitude, lng: a.Longitude,
+      name: a.Title || 'Charging station',
+      addr: [a.AddressLine1, a.Town, a.StateOrProvince].filter(Boolean).join(', '),
+      operator: op, brand: brandOf(op, a.Title),
+      maxKw, dc, points: p.NumberOfPoints || conns.reduce((n, c) => n + (c.Quantity || 1), 0) || null,
+      types: types.map(shortType),
+      free: /^\s*free\s*$/i.test(p.UsageCost || ''), charge: /^\s*free\s*$/i.test(p.UsageCost || '') ? '' : (p.UsageCost || '').trim(),
+    };
+  });
+}
+
+// A saved copy of every OpenStreetMap charger in Malaysia, refreshed weekly, so searching
+// is instant and works even when map servers are busy.
+//  • PC app: the local server keeps it (api/chargers).
+//  • Website/iPhone: the file data/chargers-osm.json, refreshed weekly by GitHub;
+//    "Update now" downloads a newer copy straight to this device.
+let osmCache = null;
+let serverMode = null; // true = running from the PC app with its local server
+async function hasServer() {
+  if (serverMode === null) {
+    try { const r = await fetch('api/chargers/info', { cache: 'no-store' }); serverMode = r.ok && /json/.test(r.headers.get('content-type') || ''); }
+    catch { serverMode = false; }
+  }
+  return serverMode;
+}
+function deviceCopy() { // newer list saved on this device by "Update now" (website only)
+  try { return JSON.parse(localStorage.getItem('evp.osm') || 'null'); } catch { return null; }
+}
+async function getInfo() {
+  if (await hasServer()) return fetchJSON('api/chargers/info', { cache: 'no-store' }, 10000);
+  const site = await fetchJSON('data/info.json', { cache: 'no-cache' }, 10000).catch(() => null);
+  const dev = deviceCopy();
+  if (dev && (!site || dev.updated > site.updated)) return { updated: dev.updated, count: dev.count };
+  return site;
+}
+async function fromOSM(pts, padKm) {
+  if (!osmCache) {
+    setStatus('Loading charger list…');
+    try {
+      if (await hasServer()) osmCache = await fetchJSON('api/chargers', {}, 180000);
+      else {
+        const info = await getInfo().catch(() => null);
+        const dev = deviceCopy();
+        osmCache = dev && info && dev.updated === info.updated ? dev.data : await fetchJSON('data/chargers-osm.json', { cache: 'no-cache' }, 60000);
+      }
+    } catch { throw new Error('The charger list could not be loaded. Check your internet connection, or add a free Open Charge Map key in Settings.'); }
+  }
+  const b = bboxOf(pts, padKm);
+  return osmCache.elements.map(el => {
+        const t = el.tags || {};
+        const lat = el.lat ?? (el.center && el.center.lat), lng = el.lon ?? (el.center && el.center.lon);
+        const kws = Object.entries(t).filter(([k]) => /output$/.test(k)).map(([, v]) => parseFloat(v)).filter(n => !isNaN(n));
+        const maxKw = kws.length ? Math.max(...kws) : 0;
+        const sockets = Object.keys(t).filter(k => /^socket:[^:]+$/.test(k)).map(k => k.split(':')[1]);
+        const dc = maxKw >= 25 || sockets.some(s => /ccs|chademo|tesla_supercharger|gb_t_dc/i.test(s)) || /dc|fast|rapid|handal/i.test(t.name || '');
+        const op = t.operator || t.brand || t.network || '';
+        return {
+          id: 'osm' + el.type[0] + el.id, lat, lng,
+          name: t.name || t.brand || t.operator || 'Charging station',
+          addr: [t['addr:street'], t['addr:city']].filter(Boolean).join(', '),
+          operator: op, brand: brandOf(op, t.name, t.brand, t.network),
+          maxKw, dc, points: t.capacity ? +t.capacity : null,
+          types: [...new Set(sockets.map(shortType))],
+          free: t.fee === 'no', charge: t.charge || '',
+        };
+      }).filter(c => c.lat != null && c.lat >= b.s && c.lat <= b.n && c.lng >= b.w && c.lng <= b.e);
+}
+function shortType(t) {
+  const s = String(t).toLowerCase();
+  if (/ccs|combo/.test(s)) return 'CCS2';
+  if (/chademo/.test(s)) return 'CHAdeMO';
+  if (/type ?2|type2|mennekes/.test(s)) return 'Type 2';
+  if (/gb.?t/.test(s)) return 'GB/T';
+  if (/tesla|nacs/.test(s)) return 'Tesla';
+  if (/type ?1|j1772/.test(s)) return 'Type 1';
+  return t;
+}
+
+// ───────────────────────── Charger list: last updated + Update now ─────────────────────────
+function fmtDate(iso) {
+  const d = new Date(iso);
+  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) + ', ' + d.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+}
+function showInfo(info) {
+  $('dataInfo').textContent = info && info.updated
+    ? `Charger list updated ${fmtDate(info.updated)} · ${info.count} stations · auto-updates weekly`
+    : 'Charger list not downloaded yet — press Update now.';
+}
+getInfo().then(showInfo).catch(() => { $('dataInfo').textContent = 'Charger list: info unavailable'; });
+
+// Website mode: download the newest list straight from OpenStreetMap (first server to answer wins).
+const OSM_QUERY = '[out:json][timeout:120];(nwr["amenity"="charging_station"](1.2,99.6,6.8,104.6);nwr["amenity"="charging_station"](0.8,109.5,7.5,119.4););out center tags;';
+const OSM_SERVERS = ['https://maps.mail.ru/osm/tools/overpass/api/interpreter', 'https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'];
+async function refreshOnDevice() {
+  const before = (await getInfo().catch(() => null) || {}).count || 0;
+  const ctls = OSM_SERVERS.map(() => new AbortController());
+  let data;
+  try {
+    data = await Promise.any(OSM_SERVERS.map((url, i) => {
+      const t = setTimeout(() => ctls[i].abort(), 150000);
+      return fetch(url, { method: 'POST', body: 'data=' + encodeURIComponent(OSM_QUERY), headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, signal: ctls[i].signal })
+        .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(j => { if (!Array.isArray(j.elements) || j.elements.length < 50) throw new Error('too few'); return j; })
+        .finally(() => clearTimeout(t));
+    }));
+  } catch {
+    return { ok: false, error: 'The map servers are busy right now. Your saved list is still being used — try again later.' };
+  } finally { ctls.forEach(c => c.abort()); }
+  const copy = { updated: new Date().toISOString(), count: data.elements.length, data };
+  try { localStorage.setItem('evp.osm', JSON.stringify(copy)); } catch {}
+  osmCache = data;
+  return { ok: true, before, updated: copy.updated, count: copy.count };
+}
+
+$('updateNow').addEventListener('click', async () => {
+  const btn = $('updateNow');
+  btn.disabled = true; btn.textContent = '⏳ Updating…';
+  $('dataInfo').textContent = 'Downloading the latest charger list (up to 2 minutes)…';
+  try {
+    const r = (await hasServer())
+      ? await fetchJSON('api/chargers/refresh', { method: 'POST', cache: 'no-store' }, 200000)
+      : await refreshOnDevice();
+    showInfo(r.ok ? r : await getInfo().catch(() => null));
+    if (r.ok) {
+      const diff = r.count - r.before;
+      setStatus(`✅ Charger list updated: ${r.count} stations${diff > 0 ? ` (${diff} new)` : diff < 0 ? ` (${-diff} removed)` : ' (no changes)'}.`);
+      if (await hasServer()) osmCache = null; // load the new list from the PC server
+      if (state.to) run();                     // refresh the current search
+    } else {
+      setStatus('⚠️ ' + r.error, true);
+    }
+  } catch {
+    setStatus('⚠️ Could not update the charger list right now. Check your internet connection and try again.', true);
+  } finally { btn.disabled = false; btn.textContent = '🔄 Update now'; }
+});
+
+// ───────────────────────── Main search ─────────────────────────
+// "Me" button: uses the PC/phone's real location (Windows Location / GPS / Wi-Fi).
+// Internet-based guesses are not used — in Malaysia they usually point to KL.
+function getPosition(highAccuracy, timeout) {
+  return new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve, reject, { enableHighAccuracy: highAccuracy, timeout, maximumAge: 30000 });
+  });
+}
+async function placeName(latlng) {
+  try {
+    const j = await fetchJSON(`https://nominatim.openstreetmap.org/reverse?format=json&zoom=17&lat=${latlng[0]}&lon=${latlng[1]}`, { headers: { 'Accept-Language': 'en' } }, 8000);
+    const a = j.address || {};
+    return [a.road, a.suburb || a.neighbourhood || a.village, a.town || a.city || a.county].filter(Boolean).join(', ');
+  } catch { return ''; }
+}
+let meMarker = null;
+$('myLoc').addEventListener('click', async () => {
+  const btn = $('myLoc');
+  btn.disabled = true;
+  setStatus('📍 Finding your location…');
+  try {
+    let pos = null;
+    const pc = await hasServer();
+    // 1) The phone's GPS / browser location (iPhone, Edge, Chrome — when allowed)
+    let blocked = false;
+    if (navigator.geolocation) {
+      try { pos = await getPosition(true, pc ? 8000 : 15000); }
+      catch (e) {
+        if (e.code === 1) blocked = true;
+        else if (!pc) { try { pos = await getPosition(false, 20000); } catch (e2) { if (e2.code === 1) blocked = true; } }
+      }
+    }
+    // 2) PC app only: ask Windows directly through the app's own server (works even when the browser blocks location)
+    if (!pos && pc) {
+      setStatus('📍 Asking Windows for your location… (up to 20 seconds)');
+      const r = await fetch('api/my-location', { cache: 'no-store' }).then(x => x.json()).catch(() => ({}));
+      if (r.lat != null) pos = { coords: { latitude: r.lat, longitude: r.lng, accuracy: r.accuracy || 500 } };
+    }
+    if (!pos) throw { code: blocked ? 1 : 2, pc };
+    const latlng = [pos.coords.latitude, pos.coords.longitude];
+    state.myLoc = latlng;
+    $('from').value = '📍 My location';
+    map.setView(latlng, 15);
+    if (meMarker) meMarker.remove();
+    meMarker = L.circleMarker(latlng, { radius: 8, color: '#fff', weight: 3, fillColor: '#1a73e8', fillOpacity: 1 }).addTo(map);
+    const acc = Math.round(pos.coords.accuracy);
+    setStatus(`📍 Found you (accuracy ±${acc >= 1000 ? (acc / 1000).toFixed(1) + ' km' : acc + ' m'}). Looking up the street…`);
+    const name = await placeName(latlng);
+    setStatus(`📍 You are near ${name || latlng.map(n => n.toFixed(5)).join(', ')} (±${acc >= 1000 ? (acc / 1000).toFixed(1) + ' km' : acc + ' m'}). If this is wrong, type your start place or tap a 🏠 HOME button.`);
+  } catch (e) {
+    state.myLoc = null;
+    if ($('from').value === '📍 My location') $('from').value = '';
+    const iPhone = /iPhone|iPad|iPod/.test(navigator.userAgent);
+    const msg = e && e.pc
+      ? 'Could not get your location. Check that Wi-Fi is on and Windows Settings → Privacy & security → Location is On.'
+      : iPhone
+        ? (e && e.code === 1
+            ? 'Location is not allowed. On iPhone: Settings → Privacy & Security → Location Services → turn On, then Safari Websites → “While Using the App”. Tap 📍 Me again and choose Allow.'
+            : 'Could not get a GPS fix. Check Location Services is on and try again outdoors.')
+        : (e && e.code === 1 ? 'Location is blocked in this browser — allow location for this site and try again.' : 'Could not get your location.');
+    setStatus('⚠️ ' + msg + ' Or type your start place / tap a 🏠 saved place.', true);
+  } finally { btn.disabled = false; }
+});
+$('from').addEventListener('input', () => { if ($('from').value !== '📍 My location') state.myLoc = null; });
+
+$('tripForm').addEventListener('submit', e => { e.preventDefault(); run(); });
+
+async function run() {
+  const fromQ = $('from').value.trim(), toQ = $('to').value.trim();
+  if (!toQ) return setStatus('Type a destination first.', true);
+  store.set('lastTo', toQ); store.set('lastFrom', fromQ === '📍 My location' ? '' : fromQ);
+  const btn = $('goBtn'); btn.disabled = true;
+  const corridor = +$('corridor').value;
+  try {
+    layer.clearLayers(); routeLayer.clearLayers(); markers.clear(); state.stops.clear();
+    setStatus('Finding places…');
+    const [from, to] = await Promise.all([fromQ ? geocode(fromQ) : null, geocode(toQ)]);
+    state.from = from; state.to = to;
+
+    let pts, padKm;
+    if (from) {
+      setStatus('Planning the driving route…');
+      state.route = await getRoute(from.latlng, to.latlng);
+      pts = state.route.pts; padKm = corridor;
+      L.polyline(pts, { color: '#0f8a5f', weight: 5, opacity: .85 }).addTo(routeLayer);
+      map.fitBounds(L.latLngBounds(pts), { padding: [30, 30] });
+    } else {
+      state.route = null;
+      pts = [to.latlng]; padKm = Math.max(corridor, 5);
+      map.setView(to.latlng, 13);
+    }
+    endpoint(to.latlng, '🏁 ' + to.name.split(',')[0]);
+    if (from) endpoint(from.latlng, '🚗 Start');
+
+    setStatus('Searching for chargers…');
+    const key = $('ocmKey').value.trim();
+    const src = $('source').value;
+    let list;
+    if (src === 'ocm') {
+      if (!key) throw new Error('Open Charge Map needs a free key — open Settings below to add one, or switch to OpenStreetMap.');
+      list = await fromOCM(pts, padKm, key);
+    } else if (src === 'auto' && key) {
+      // Use both lists for the most chargers; drop OpenStreetMap entries that duplicate an Open Charge Map one.
+      const [ocm, osm] = await Promise.allSettled([fromOCM(pts, padKm, key), fromOSM(pts, padKm)]);
+      const a = ocm.status === 'fulfilled' ? ocm.value : [];
+      const b = osm.status === 'fulfilled' ? osm.value : [];
+      if (!a.length && !b.length && ocm.status === 'rejected') throw ocm.reason;
+      list = a.concat(b.filter(o => !a.some(x => Math.abs(x.lat - o.lat) < 0.001 && Math.abs(x.lng - o.lng) < 0.001 && hav([x.lat, x.lng], [o.lat, o.lng]) < 0.08)));
+    } else {
+      list = await fromOSM(pts, padKm);
+    }
+
+    // Place each charger along the route
+    const seen = new Set();
+    state.chargers = list.filter(c => {
+      const k = c.lat.toFixed(4) + ',' + c.lng.toFixed(4) + c.brand.id;
+      if (seen.has(k)) return false; seen.add(k); return true;
+    }).map(c => {
+      const p = [c.lat, c.lng];
+      if (state.route) {
+        let best = Infinity, bi = 0;
+        const R = state.route.pts;
+        for (let i = 0; i < R.length; i++) { const d = hav(p, R[i]); if (d < best) { best = d; bi = i; } }
+        return { ...c, off: best, along: state.route.cum[bi], toDest: hav(p, to.latlng) };
+      }
+      const d = hav(p, to.latlng);
+      return { ...c, off: d, along: null, toDest: d };
+    }).filter(c => c.off <= padKm + 0.3)
+      .sort((a, b) => state.route ? a.along - b.along : a.toDest - b.toDest);
+
+    updateGoogleLinks();
+    render();
+  } catch (e) {
+    setStatus('⚠️ ' + (e.name === 'AbortError' ? 'The request timed out. Please try again.' : e.message), true);
+    updateGoogleLinks();
+  } finally { btn.disabled = false; }
+}
+
+function endpoint(latlng, text) {
+  L.marker(latlng, { icon: L.divIcon({ className: '', html: `<div class="endpoint">${esc(text)}</div>`, iconSize: null, iconAnchor: [0, 10] }), zIndexOffset: 1000 }).addTo(routeLayer);
+}
+
+// ───────────────────────── Render ─────────────────────────
+function visible() {
+  const dcOnly = $('dcOnly').checked;
+  const list = state.chargers.filter(c => !state.hidden.has(c.brand.id) && (!dcOnly || c.dc));
+  if ($('sort').value === 'price') {
+    const key = c => { const p = priceFor(c); return p && p.low != null ? (p.low + p.high) / 2 : Infinity; };
+    return list.slice().sort((a, b) => key(a) - key(b));
+  }
+  return list;
+}
+
+function renderChips() {
+  const counts = {};
+  for (const c of state.chargers) counts[c.brand.id] = (counts[c.brand.id] || 0) + 1;
+  $('chips').innerHTML = BRANDS.filter(b => counts[b.id]).map(b =>
+    `<span class="chip ${state.hidden.has(b.id) ? 'off' : ''}" data-b="${b.id}" title="Show/hide ${esc(b.name)}"><span class="dot" style="background:${b.color}"></span>${esc(b.name)} · ${counts[b.id]}</span>`
+  ).join('');
+}
+$('chips').addEventListener('click', e => {
+  const chip = e.target.closest('.chip'); if (!chip) return;
+  const id = chip.dataset.b;
+  state.hidden.has(id) ? state.hidden.delete(id) : state.hidden.add(id);
+  render();
+});
+
+function render() {
+  renderChips();
+  renderTripCheck();
+  layer.clearLayers(); markers.clear();
+  const vis = visible();
+  const ul = $('list');
+  if (!state.to) { ul.innerHTML = ''; return; }
+  if (!vis.length) {
+    ul.innerHTML = `<li class="empty">No chargers found${state.chargers.length ? ' with these filters' : ''}. Try a wider distance, turn off “DC fast only”, or use the Google Maps button above.</li>`;
+  } else {
+    ul.innerHTML = vis.map(c => {
+      const where = state.route
+        ? `${c.along.toFixed(0)} km into trip<br>${c.off < 0.5 ? 'on route' : c.off.toFixed(1) + ' km off'}`
+        : `${c.toDest.toFixed(1)} km<br>from destination`;
+      const power = c.maxKw ? `${Math.round(c.maxKw)} kW` : '';
+      return `<li class="item" data-id="${c.id}">
+        <span class="dot" style="background:${c.brand.color}"></span>
+        <div>
+          <div class="name">${esc(c.name)}</div>
+          <div class="meta">${esc(c.brand.id === 'other' ? (c.operator || 'Unknown operator') : c.brand.name)}${c.addr ? ' · ' + esc(c.addr) : ''}</div>
+          <div class="meta">${c.dc ? '<span class="tag dc">DC fast</span>' : '<span class="tag">AC</span>'}${power ? `<span class="tag">${power}</span>` : ''}${c.types.slice(0, 3).map(t => `<span class="tag">${esc(t)}</span>`).join('')}${c.points ? `<span class="tag">${c.points} pts</span>` : ''}</div>
+          ${priceHTML(c)}
+        </div>
+        <div class="km">${where}</div>
+        <div class="acts">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=${c.lat},${c.lng}&travelmode=driving" target="_blank" rel="noopener">🧭 Navigate</a>
+          ${state.route ? `<button type="button" class="stop ${state.stops.has(c.id) ? 'on' : ''}" data-stop="${c.id}">${state.stops.has(c.id) ? '✓ Stop added' : '+ Add as stop'}</button>` : ''}
+        </div>
+      </li>`;
+    }).join('');
+  }
+  for (const c of vis) {
+    const m = L.marker([c.lat, c.lng], { icon: L.divIcon({ className: '', html: `<div class="pin ${c.dc ? 'dc' : ''}" style="background:${c.brand.color}"></div>`, iconSize: [c.dc ? 18 : 14, c.dc ? 18 : 14] }) })
+      .bindPopup(`<b>${esc(c.name)}</b><br>${esc(c.brand.id === 'other' ? (c.operator || 'Unknown operator') : c.brand.name)}<br>${c.dc ? 'DC fast' : 'AC'}${c.maxKw ? ' · ' + Math.round(c.maxKw) + ' kW' : ''}${priceHTML(c)}<a href="https://www.google.com/maps/dir/?api=1&destination=${c.lat},${c.lng}&travelmode=driving" target="_blank" rel="noopener">Navigate in Google Maps</a>`)
+      .on('click', () => highlight(c.id, true))
+      .addTo(layer);
+    markers.set(c.id, m);
+  }
+  const total = state.chargers.length, shown = vis.length;
+  const dcCount = vis.filter(c => c.dc).length;
+  const trip = state.route ? `Trip ${state.route.km.toFixed(0)} km (~${fmtMin(state.route.min)}). ` : '';
+  setStatus(`${trip}${shown} charger${shown === 1 ? '' : 's'} shown${shown !== total ? ` of ${total}` : ''} · ${dcCount} DC fast.`);
+}
+function fmtMin(m) { const h = Math.floor(m / 60), mm = Math.round(m % 60); return h ? `${h} h ${mm} min` : `${mm} min`; }
+
+$('list').addEventListener('click', e => {
+  const stopBtn = e.target.closest('[data-stop]');
+  if (stopBtn) {
+    const id = stopBtn.dataset.stop;
+    if (state.stops.has(id)) state.stops.delete(id);
+    else if (state.stops.size >= 9) return setStatus('Google Maps allows up to 9 stops.', true);
+    else state.stops.add(id);
+    updateGoogleLinks(); render(); highlight(id, false);
+    return;
+  }
+  if (e.target.closest('a')) return;
+  const li = e.target.closest('.item'); if (!li) return;
+  highlight(li.dataset.id, false, true);
+});
+function highlight(id, scrollList, flyTo) {
+  document.querySelectorAll('.item.sel').forEach(x => x.classList.remove('sel'));
+  const li = document.querySelector(`.item[data-id="${CSS.escape(id)}"]`);
+  if (li) { li.classList.add('sel'); if (scrollList) li.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+  const m = markers.get(id);
+  if (m && flyTo) { map.setView(m.getLatLng(), Math.max(map.getZoom(), 14)); m.openPopup(); }
+}
+
+function updateGoogleLinks() {
+  const trip = $('gmTrip'), near = $('gmNear');
+  if (state.to) {
+    near.href = `https://www.google.com/maps/search/EV+charging+station/@${state.to.latlng[0]},${state.to.latlng[1]},14z`;
+    near.classList.remove('hidden');
+  } else near.classList.add('hidden');
+  if (state.from && state.to) {
+    const stops = state.chargers.filter(c => state.stops.has(c.id)).sort((a, b) => a.along - b.along);
+    const gq = p => p.address ? encodeURIComponent(p.address) : ll(p.latlng);
+    let url = `https://www.google.com/maps/dir/?api=1&origin=${gq(state.from)}&destination=${gq(state.to)}&travelmode=driving`;
+    if (stops.length) url += '&waypoints=' + stops.map(c => `${c.lat},${c.lng}`).join('|');
+    trip.href = url;
+    trip.textContent = stops.length ? `🗺️ Open trip in Google Maps (${stops.length} stop${stops.length > 1 ? 's' : ''})` : '🗺️ Open trip in Google Maps';
+    trip.classList.remove('hidden');
+  } else trip.classList.add('hidden');
+}
+</script>
+</body>
+</html>
